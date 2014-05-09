@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+    {{ form.media }}
+</head>
+<body>
+{{ form.as_p }}
+{#<p>#}
+{#    <label>{{ form.gid.label_tag }}</label>#}
+{#    {{ form.gid }}#}
+{#    <span>{{ form.gid.errors }}</span>#}
+{#</p>#}
+{#<style type="text/css">#}
+{#    #id_geom_map {#}
+{#        width: 800px;#}
+{#        height: 600px;#}
+{#    }#}
+{##}
+{#    #id_geom_map .aligned label {#}
+{#        float: inherit;#}
+{#    }#}
+{##}
+{#    #id_geom_div_map {#}
+{#        position: relative;#}
+{#        vertical-align: top;#}
+{#        float: left;#}
+{#    }#}
+{##}
+{#    #id_geom {#}
+{#        display: none;#}
+{#    }#}
+{##}
+{#    .olControlEditingToolbar .olControlModifyFeatureItemActive {#}
+{#        background-image: url("/static/admin/img/gis/move_vertex_on.png");#}
+{#        background-repeat: no-repeat;#}
+{#    }#}
+{##}
+{#    .olControlEditingToolbar .olControlModifyFeatureItemInactive {#}
+{#        background-image: url("/static/admin/img/gis/move_vertex_off.png");#}
+{#        background-repeat: no-repeat;#}
+{#    }#}
+{#</style>#}
+{##}
+{#<div id="id_geom_div_map">#}
+{#    <div id="id_geom_map"></div>#}
+{#    <span class="clear_features"><a href="javascript:geodjango_geom.clearFeatures()">Delete all Features</a></span>#}
+{##}
+{#    <textarea id="id_geom" class="vSerializedField required" cols="150" rows="10" name="geom"></textarea>#}
+{#    <script type="text/javascript">#}
+{#        var map_options = {};#}
+{#        var options = {#}
+{#            geom_name: 'Unknown',#}
+{#            id: 'id_geom',#}
+{#            map_id: 'id_geom_map',#}
+{#            map_options: map_options,#}
+{#            map_srid: 4326,#}
+{#            name: 'geom'#}
+{#        };#}
+{##}
+{#        var geodjango_geom = new MapWidget(options);#}
+{#    </script>#}
+{#</div>#}
+
+</body>
+</html>
