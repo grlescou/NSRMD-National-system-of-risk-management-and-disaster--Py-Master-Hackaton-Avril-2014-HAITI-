@@ -1,1 +1,1 @@
-web: gunicorn geoDjango.wsgi
+web: python manage.py collectstatic --noinput --settings=geoDjango.settings; python manage.py runserver 0.0.0.0:$PORT --noreload --settings=geoDjango.settings
