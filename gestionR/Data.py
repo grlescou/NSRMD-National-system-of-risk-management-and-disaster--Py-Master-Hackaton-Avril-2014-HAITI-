@@ -2,16 +2,16 @@
 # -*- coding: utf-8 -*-
 __author__ = 'Suy'
 RISQUE = (
-        ('Cyclones','Cyclones'),
-        ('Foudre','Foudre'),
-        ('Tsunami','Tsunami'),
+        (u'Cyclones',u'Cyclones'),
+        (u'Foudre',u'Foudre'),
+        (u'Tsunami',u'Tsunami'),
         (u'Sécheresse',u'Sécheresse'),
-        ('Eboulement','Eboulement'),
-        ('Innodation','Innodation'),
-        ('Glissement de terrain','Glissement de terrain'),
-        ('Tremblement de terre','Tremblement de terre'),
-        ('Incendie','Incendie'),
-        ('Erosion','Erosion'),
+        (u'Eboulement',u'Eboulement'),
+        (u'Innodation',u'Innodation'),
+        (u'Glissement de terrain',u'Glissement de terrain'),
+        (u'Tremblement de terre',u'Tremblement de terre'),
+        (u'Incendie',u'Incendie'),
+        (u'Erosion',u'Erosion'),
     )
 EFFETSEG = (
     (u'Rupture de système de communication',u'Rupture de système de communication'),
@@ -24,8 +24,8 @@ EFFETSEG = (
 )
 
 DEGRE = (
-    ("Fortement","Fortement"),
-    ("Moderement","Moderement"),
-    ("Faiblement","Faiblement"),
+    (u"Fortement",u"Fortement"),
+    (u"Modérément",u"Modérément"),
+    (u"Faiblement",u"Faiblement"),
 )
 
