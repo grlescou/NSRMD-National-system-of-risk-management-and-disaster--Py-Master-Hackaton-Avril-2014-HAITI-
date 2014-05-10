@@ -55,7 +55,7 @@ ROOT_URLCONF = 'geoDjango.urls'
 WSGI_APPLICATION = 'geoDjango.wsgi.application'
 
 TEMPLATE_DIRS = (
-    os.path.join(os.path.dirname(__file__), 'template').replace('\\','/'),
+    os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
 )
 
 
