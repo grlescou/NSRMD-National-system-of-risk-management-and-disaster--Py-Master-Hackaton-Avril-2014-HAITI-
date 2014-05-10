@@ -1,0 +1,45 @@
+{% extends 'masterpage.html' %}
+{% block content %}
+    <div id="page-wrapper">
+
+        <div class="row">
+          <div class="col-lg-12">
+              <form style="float: right">
+                  <select>
+                    <option></option>
+                    <option>Port-au-Prince</option>
+                      <option>Jacmel</option>
+                </select>
+              </form>
+            <h1>Tableau de bord <small>de l'évolution de la commune Port-au-Prince</small>
+
+            </h1>
+
+
+            <ol class="breadcrumb">
+              <li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>
+            </ol>
+
+          </div>
+        </div><!-- /.row -->
+
+
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Traffic Statistics: October 1, 2013 - October 31, 2013</h3>
+              </div>
+              <div class="panel-body">
+                <div id="morris-chart-area"></div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.row -->
+
+
+
+        </div>
+      </div>
+{% endblock %}

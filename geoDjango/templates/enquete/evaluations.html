@@ -1,0 +1,282 @@
+{% extends 'masterpage.html' %}
+
+{% block content %}
+    <div id="page-wrapper">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-primary">
+                {#              <div class="panel-heading">#}
+                {#                <h3 class="panel-title">Présence institutionnelle</h3>#}
+                {#              </div>#}
+                <div class="panel-body">
+                    <form action="/RessourcesDIntervention/{{ id }}/" method="POST">
+                        {% csrf_token %}
+                        <div>
+                            {{ form.errors }}
+                        </div>
+                        {{ form.observations.label_tag }}
+
+                        {{ form.observations }}
+
+                        {{ form.objectif.label_tag }}
+                        {{ form.objectif }}
+
+
+                        <input type="submit" value="Enregistrer"/>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+
+
+    <div class="row">
+    <div class="col-lg-12">
+    <div class="panel panel-primary">
+    <div class="panel-heading">
+
+        <h3 class="panel-title">Présence institutionnelle </h3>
+
+    </div>
+    <div class="panel-body">
+    <table class="table table-bordered table-hover table-striped tablesorter">
+
+
+    <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.75pt'>
+        <td width=848 nowrap colspan=5 valign=top style='width:636.0pt;border:solid black 1.0pt;
+  mso-border-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+  text1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt'>
+            <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-layout-grid-align:none;text-autospace:
+  none'><b><span lang=FR style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Arial-BoldMT;mso-bidi-language:AR-SA'>Ressources d'intervention<o:p></o:p></span></b></p>
+        </td>
+    </tr>
+    <tr style='mso-yfti-irow:1;height:15.0pt'>
+        <td width=471 nowrap rowspan=2 valign=top style='width:352.95pt;border:solid black 1.0pt;
+  mso-border-themecolor:text1;border-top:none;mso-border-top-alt:solid black .5pt;
+  mso-border-top-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+  text1;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+            <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-layout-grid-align:none;text-autospace:
+  none'><b><span lang=FR style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Arial-BoldMT;mso-bidi-language:AR-SA'>Type<o:p></o:p></span></b></p>
+        </td>
+        <td width=116 nowrap colspan=2 valign=top style='width:87.05pt;border-top:
+  none;border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.0pt'>
+            <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-layout-grid-align:none;text-autospace:
+  none'><b><span lang=FR style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Arial-BoldMT;mso-bidi-language:AR-SA'>Présence<o:p></o:p></span></b></p>
+        </td>
+        <td width=133 nowrap rowspan=2 valign=top style='width:99.7pt;border-top:
+  none;border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.0pt'>
+            <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-layout-grid-align:none;text-autospace:
+  none'><b><span lang=FR style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Arial-BoldMT;mso-bidi-language:AR-SA'>Résultats<o:p></o:p></span></b></p>
+        </td>
+        <td width=128 nowrap rowspan=2 valign=top style='width:96.3pt;border-top:
+  none;border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.0pt'>
+            <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-layout-grid-align:none;text-autospace:
+  none'><b><span lang=FR style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Arial-BoldMT;mso-bidi-language:AR-SA'>Objectifs<o:p></o:p></span></b></p>
+        </td>
+    </tr>
+    <tr style='mso-yfti-irow:2;height:15.75pt'>
+        <td width=53 nowrap valign=top style='width:40.05pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.75pt'>
+            <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-layout-grid-align:none;text-autospace:
+  none'><b><span lang=FR style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Arial-BoldMT;mso-bidi-language:AR-SA'>Non<o:p></o:p></span></b></p>
+        </td>
+        <td width=63 nowrap valign=top style='width:47.0pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.75pt'>
+            <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-layout-grid-align:none;text-autospace:
+  none'><b><span lang=FR style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Arial-BoldMT;mso-bidi-language:AR-SA'>Oui<o:p></o:p></span></b></p>
+        </td>
+    </tr>
+
+
+
+
+    {% for intervention in interventions %}
+
+
+
+        <tr style='mso-yfti-irow:3;height:15.0pt'>
+            <td width=471 nowrap valign=top style='width:352.95pt;border:solid black 1.0pt;
+  mso-border-themecolor:text1;border-top:none;mso-border-top-alt:solid black .5pt;
+  mso-border-top-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+  text1;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+                <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-layout-grid-align:none;text-autospace:none'><span lang=FR
+                                                               style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial-BoldMT;
+  mso-bidi-language:AR-SA;mso-bidi-font-weight:bold'>{{ intervention.type }}</span></p>
+            </td>
+            <td width=53 nowrap valign=top style='width:40.05pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.0pt'>
+                <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-layout-grid-align:none;text-autospace:none'><span lang=FR
+                                                               style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial-BoldMT;
+  mso-bidi-language:AR-SA;mso-bidi-font-weight:bold'>&nbsp;
+
+                    {% ifequal intervention.presence 'Non' %}X{% endifequal %}
+
+                </span></p>
+            </td>
+            <td width=63 nowrap valign=top style='width:47.0pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.0pt'>
+                <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-layout-grid-align:none;text-autospace:none'><span lang=FR
+                                                               style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial-BoldMT;
+  mso-bidi-language:AR-SA;mso-bidi-font-weight:bold'>&nbsp;
+
+                    {% ifequal intervention.presence 'Oui' %}X{% endifequal %}
+
+                </span></p>
+            </td>
+            <td width=133 nowrap valign=top style='width:99.7pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.0pt'>
+                <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-layout-grid-align:none;text-autospace:none'><span lang=FR
+                                                               style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial-BoldMT;
+  mso-bidi-language:AR-SA;mso-bidi-font-weight:bold'>&nbsp;{{ intervention.resultat }}</span></p>
+            </td>
+            <td width=128 nowrap valign=top style='width:96.3pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.0pt'>
+                <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-layout-grid-align:none;text-autospace:none'><span lang=FR
+                                                               style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial-BoldMT;
+  mso-bidi-language:AR-SA;mso-bidi-font-weight:bold'>33.33%<o:p></o:p></span></p>
+            </td>
+        </tr>
+
+
+
+    {% endfor %}
+
+
+
+
+    <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes;height:15.75pt'>
+        <td width=269 nowrap valign=top style='width:201.45pt;border:solid black 1.0pt;
+  mso-border-themecolor:text1;border-top:none;mso-border-top-alt:solid black .5pt;
+  mso-border-top-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+  text1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt'></td>
+        <td width=145 nowrap valign=top style='width:108.7pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.75pt'></td>
+        <td width=230 nowrap valign=top style='width:172.85pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.75pt'></td>
+        <td width=107 nowrap valign=top style='width:80.25pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.75pt'>
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-layout-grid-align:none;text-autospace:none'><b><span lang=FR
+                                                                  style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial-BoldMT;
+  mso-bidi-language:AR-SA'>&nbsp;<o:p></o:p></span></b></p>
+        </td>
+        <td width=97 nowrap valign=top style='width:72.75pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.75pt'>
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-layout-grid-align:none;text-autospace:none'><b><span lang=FR
+                                                                  style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial-BoldMT;
+  mso-bidi-language:AR-SA'>100%<o:p></o:p></span></b></p>
+        </td>
+    </tr>
+
+    </table>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    </div><!-- /#page-wrapper -->
+
+{% endblock %}

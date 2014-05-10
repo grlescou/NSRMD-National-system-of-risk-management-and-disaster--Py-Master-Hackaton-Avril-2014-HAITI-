@@ -1,0 +1,333 @@
+{% extends 'masterpage.html' %}
+
+{% block content %}
+    <div id="page-wrapper">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-primary">
+                {#              <div class="panel-heading">#}
+                {#                <h3 class="panel-title">Présence institutionnelle</h3>#}
+                {#              </div>#}
+                <div class="panel-body">
+                    <form action="/Materiels/{{ id }}/" method="POST">
+                        {% csrf_token %}
+                        <div>
+                            {{ form.errors }}
+                        </div>
+                        {{ form.type.label_tag }}
+
+                        {{ form.type }}
+
+                        {{ form.existence.label_tag }}
+                        {{ form.existence }}
+
+
+                        <input type="submit" value="Enregistrer"/>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+
+
+    <div class="row">
+    <div class="col-lg-12">
+    <div class="panel panel-primary">
+    <div class="panel-heading">
+
+        <h3 class="panel-title">Présence institutionnelle </h3>
+
+    </div>
+    <div class="panel-body">
+    <table class="table table-bordered table-hover table-striped tablesorter">
+
+
+    <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:16.5pt'>
+        <td width=664 nowrap colspan=6 valign=top style='width:498.1pt;border:solid black 1.0pt;
+  mso-border-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+  text1;padding:0in 5.4pt 0in 5.4pt;height:16.5pt'>
+            <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-layout-grid-align:none;text-autospace:
+  none'><b><span lang=FR style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Arial-BoldMT;mso-bidi-language:AR-SA'>INFRASTRUCTURES<o:p></o:p></span></b></p>
+        </td>
+    </tr>
+    <tr style='mso-yfti-irow:1;height:15.0pt'>
+        <td width=261 rowspan=2 valign=top style='width:195.95pt;border:solid black 1.0pt;
+  mso-border-themecolor:text1;border-top:none;mso-border-top-alt:solid black .5pt;
+  mso-border-top-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+  text1;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+            <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-layout-grid-align:none;text-autospace:
+  none'><b><span lang=FR style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Arial-BoldMT;mso-bidi-language:AR-SA'>Type<o:p></o:p></span></b></p>
+        </td>
+        <td width=274 nowrap colspan=3 valign=top style='width:205.4pt;border-top:
+  none;border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.0pt'>
+            <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-layout-grid-align:none;text-autospace:
+  none'><b><span lang=FR style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Arial-BoldMT;mso-bidi-language:AR-SA'>Existence<o:p></o:p></span></b></p>
+        </td>
+        <td width=65 nowrap rowspan=2 valign=top style='width:49.05pt;border-top:
+  none;border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.0pt'>
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-layout-grid-align:none;text-autospace:none'><b><span lang=FR
+                                                                  style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial-BoldMT;
+  mso-bidi-language:AR-SA'>Résultats<o:p></o:p></span></b></p>
+        </td>
+        <td width=64 nowrap rowspan=2 valign=top style='width:47.7pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.0pt'>
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-layout-grid-align:none;text-autospace:none'><b><span lang=FR
+                                                                  style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial-BoldMT;
+  mso-bidi-language:AR-SA'>Objectifs<o:p></o:p></span></b></p>
+        </td>
+    </tr>
+    <tr style='mso-yfti-irow:2;height:15.75pt'>
+        <td width=46 nowrap valign=top style='width:34.45pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.75pt'>
+            <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-layout-grid-align:none;text-autospace:
+  none'><b><span lang=FR style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Arial-BoldMT;mso-bidi-language:AR-SA'>Non<o:p></o:p></span></b></p>
+        </td>
+        <td width=130 nowrap valign=top style='width:97.35pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.75pt'>
+            <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-layout-grid-align:none;text-autospace:
+  none'><b><span lang=FR style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Arial-BoldMT;mso-bidi-language:AR-SA'>Oui mais pas adéquat<o:p></o:p></span></b></p>
+        </td>
+        <td width=98 nowrap valign=top style='width:73.6pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.75pt'>
+            <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-layout-grid-align:none;text-autospace:
+  none'><b><span lang=FR style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Arial-BoldMT;mso-bidi-language:AR-SA'>Oui et adéquat<o:p></o:p></span></b></p>
+        </td>
+    </tr>
+
+
+
+    {% for materiel in materiels %}
+
+
+
+        <tr style='mso-yfti-irow:3;height:15.75pt'>
+            <td width=261 nowrap valign=top style='width:195.95pt;border:solid black 1.0pt;
+  mso-border-themecolor:text1;border-top:none;mso-border-top-alt:solid black .5pt;
+  mso-border-top-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+  text1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt'>
+                <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-layout-grid-align:none;text-autospace:none'><span lang=FR
+                                                               style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial-BoldMT;
+  mso-bidi-language:AR-SA;mso-bidi-font-weight:bold'>{{ materiel.type }}</span></p>
+            </td>
+            <td width=46 nowrap valign=top style='width:34.45pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.75pt'>
+                <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-layout-grid-align:none;text-autospace:none'><span lang=FR
+                                                               style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial-BoldMT;
+  mso-bidi-language:AR-SA;mso-bidi-font-weight:bold'>&nbsp;
+
+
+
+                    {% ifequal materiel.existence 'Non'  %}
+                            X
+                    {% endifequal %}
+
+
+
+                </span></p>
+            </td>
+            <td width=130 nowrap valign=top style='width:97.35pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.75pt'>
+                <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-layout-grid-align:none;text-autospace:none'><span lang=FR
+                                                               style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial-BoldMT;
+  mso-bidi-language:AR-SA;mso-bidi-font-weight:bold'>&nbsp;
+
+
+
+                    {% ifequal materiel.existence 'Oui mais pas adéquat'  %}
+                            X
+                    {% endifequal %}
+
+
+                </span></p>
+            </td>
+            <td width=98 nowrap valign=top style='width:73.6pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.75pt'>
+                <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-layout-grid-align:none;text-autospace:none'><span lang=FR
+                                                               style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial-BoldMT;
+  mso-bidi-language:AR-SA;mso-bidi-font-weight:bold'>&nbsp;
+
+
+                    {% ifequal materiel.existence 'Oui et adéquat'  %}
+                            X
+                    {% endifequal %}
+
+
+                </span></p>
+            </td>
+            <td width=65 nowrap valign=top style='width:49.05pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.75pt'>
+                <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-layout-grid-align:none;text-autospace:none'><span lang=FR
+                                                               style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial-BoldMT;
+  mso-bidi-language:AR-SA;mso-bidi-font-weight:bold'>&nbsp;     {{ materiel.resultat }}   </span></p>
+            </td>
+            <td width=64 nowrap valign=top style='width:47.7pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.75pt'>
+                <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-layout-grid-align:none;text-autospace:none'><span lang=FR
+                                                               style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial-BoldMT;
+  mso-bidi-language:AR-SA;mso-bidi-font-weight:bold'>{{ materiel.objectif }}</span></p>
+            </td>
+        </tr>
+
+
+
+    {% endfor %}
+
+
+
+
+    <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes;height:15.75pt'>
+        <td width=261 nowrap valign=top style='width:195.95pt;border:solid black 1.0pt;
+  mso-border-themecolor:text1;border-top:none;mso-border-top-alt:solid black .5pt;
+  mso-border-top-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+  text1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt'></td>
+        <td width=46 nowrap valign=top style='width:34.45pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.75pt'></td>
+        <td width=130 nowrap valign=top style='width:97.35pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.75pt'></td>
+        <td width=98 nowrap valign=top style='width:73.6pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.75pt'></td>
+        <td width=65 nowrap valign=top style='width:49.05pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.75pt'>
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-layout-grid-align:none;text-autospace:none'><b><span lang=FR
+                                                                  style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial-BoldMT;
+  mso-bidi-language:AR-SA'>&nbsp;<o:p></o:p></span></b></p>
+        </td>
+        <td width=64 nowrap valign=top style='width:47.7pt;border-top:none;
+  border-left:none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid black 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid black .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid black .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid black .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:15.75pt'>
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal;mso-layout-grid-align:none;text-autospace:none'><b><span lang=FR
+                                                                  style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial-BoldMT;
+  mso-bidi-language:AR-SA'>100.00%<o:p></o:p></span></b></p>
+        </td>
+    </tr>
+
+    </table>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    </div><!-- /#page-wrapper -->
+
+{% endblock %}
