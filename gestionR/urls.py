@@ -17,6 +17,7 @@ urlpatterns = patterns('',
     url(r'^jsonmapsallenquete/$', 'gestionR.views.jsonmapsallenquete', name='jsonmapsallenquete'),
     url(r'^Mapsallenquete/$', 'gestionR.views.mapsallenquete', name='mapsallenquete'),
 
+    url(r'^jsonmapbase/$', 'gestionR.views.jsonmapbase', name='jsonmapbase'),
 
     url(r'^ZoneVulnerable$', 'gestionR.views.zoneVulnerable', name='zoneVulnerable'),
     url(r'^jsonzoneVulnerable/$', 'gestionR.views.jsonzoneVulnerable', name='jsonzoneVulnerable'),
@@ -27,6 +28,9 @@ urlpatterns = patterns('',
     url(r'^MapdegreDexposition/$', 'gestionR.views.mapdegreDexposition', name='mapdegreDexposition'),
 
     url(r'^Risques$', 'gestionR.views.risques', name='risques'),
+    url(r'^jsonrisques/$', 'gestionR.views.jsonrisques', name='jsonrisques'),
+    url(r'^MapRisque/$', 'gestionR.views.maprisque', name='maprisque'),
+    url(r'^jsonRisquesection/$', 'gestionR.views.jsonRisquesection', name='jsonRisquesection'),
 
     url(r'^com/$', 'gestionR.views.viewmapsCom', name='viewmapsCom'),
     url(r'^jsoncommaps/$', 'gestionR.views.jsoncomnmaps', name='jsoncommaps'),

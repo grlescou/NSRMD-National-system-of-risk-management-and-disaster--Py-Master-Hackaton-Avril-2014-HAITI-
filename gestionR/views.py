@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import json
+from django.db.models import Q
 from django.http import HttpResponse
 from django.template.loader import get_template
 from django.template import Context
@@ -43,7 +45,7 @@ def jsonmapsallenquete(request):
     enquetes = Enquete.objects.all()
     query = []
     for enquete in enquetes:
-        query.append(enquete.commune())
+        query.append(enquete.local)
     djf = Django.Django(geodjango="geom", properties=[])  #['commune','niveau','departemen','section']
     geoj = GeoJSON.GeoJSON()
     s = geoj.encode(djf.decode(query))
@@ -104,11 +106,17 @@ def formEnquete(request):
             perception.risques.add(r3)
             perception.risques.add(r4)
 
-            return redirect('enquete/nextform.html/{}'.format())
+            return redirect('/NextFormEnquete/{}/'.format(enquete.id))
 
     return render_to_response('enquete/form.html', locals(), context_instance=RequestContext(request))
 
+def to_python(value):
+        if not value:
+            value = []
 
+        if isinstance(value, list):
+            return value
+        return ast.literal_eval(value)
 def formEnqueteNext(request,id):
      if not 'userid' in request.session:
          return redirect("/")
@@ -146,13 +154,117 @@ def formEnqueteNext(request,id):
          formvr4 = VulnerabiliteForm(request.POST,commune=enquete.local,prefix='formvr4')
          vformvr4 = formvr4.is_valid()
          if formr1.is_valid() and formr2.is_valid() and formr3.is_valid() and formr4.is_valid() and formvr1.is_valid() and formvr2.is_valid() and formvr3.is_valid() and formvr4.is_valid():
+             # pr = formr1.cleaned_data['localsd1'].split()
+             # print pr
+             # for l in pr:
+             #     print l
+             # return HttpResponse(list(formr1.cleaned_data['localsd1']))
+             #---------------------------------------------------------------------------
+             #-----------Save degre d'exposition et vlnerabilite a risque priorite 1---------------------
+             #---------------------------------------------------------------------------
              r1 = perception.risques.get(priorite=1)
-             for local in formr1.cleaned_data['localsd1']:
-                d = DegreDexposition(degre='Fortement',risque=r1,local=HtiAdm3.objects.get(id=int(local)))
+             for local in to_python(formr1.cleaned_data['localsd1']):
+                d = DegreDexposition(degre='Fortement',risqued=r1,local=HtiAdm3.objects.get(id=int(local)))
                 d.save()
-             for local in formr1.cleaned_data['localsd2']:
-                d = DegreDexposition(degre='Modérément',risque=r1,local=HtiAdm3.objects.get(id=int(local)))
-             return HttpResponse(formr1.cleaned_data['localsd1'])
+             for local in to_python(formr1.cleaned_data['localsd2']):
+                d = DegreDexposition(degre='Modérément',risqued=r1,local=HtiAdm3.objects.get(id=int(local)))
+                d.save()
+             for local in to_python(formr1.cleaned_data['localsd3']):
+                d = DegreDexposition(degre='Faiblement',risqued=r1,local=HtiAdm3.objects.get(id=int(local)))
+                d.save()
+
+                                        #...................Save degre d'exposition.......
+             for local in to_python(formvr1.cleaned_data['localsd1']):
+                v = Vulnerabilite(niveau='Fort',risquev=r1,local=HtiAdm3.objects.get(id=int(local)))
+                v.save()
+             for local in to_python(formvr1.cleaned_data['localsd2']):
+                v = Vulnerabilite(niveau='Modéré',risquev=r1,local=HtiAdm3.objects.get(id=int(local)))
+                v.save()
+             for local in to_python(formvr1.cleaned_data['localsd3']):
+                v = Vulnerabilite(niveau='Faible',risquev=r1,local=HtiAdm3.objects.get(id=int(local)))
+                v.save()
+
+
+             #---------------------------------------------------------------------------
+             #-----------Save degre d'exposition et vlnerabilite a risque priorite 2---------------------
+             #---------------------------------------------------------------------------
+             r2 = perception.risques.get(priorite=2)
+             for local in to_python(formr2.cleaned_data['localsd1']):
+                d = DegreDexposition(degre='Fortement',risqued=r2,local=HtiAdm3.objects.get(id=int(local)))
+                d.save()
+             for local in to_python(formr2.cleaned_data['localsd2']):
+                d = DegreDexposition(degre='Modérément',risqued=r2,local=HtiAdm3.objects.get(id=int(local)))
+                d.save()
+             for local in to_python(formr2.cleaned_data['localsd3']):
+                d = DegreDexposition(degre='Faiblement',risqued=r2,local=HtiAdm3.objects.get(id=int(local)))
+                d.save()
+
+                                        #...................Save vulnerabilite.......
+             for local in to_python(formvr2.cleaned_data['localsd1']):
+                v = Vulnerabilite(niveau='Forte',risquev=r2,local=HtiAdm3.objects.get(id=int(local)))
+                v.save()
+             for local in to_python(formvr2.cleaned_data['localsd2']):
+                v = Vulnerabilite(niveau='Modéré',risquev=r2,local=HtiAdm3.objects.get(id=int(local)))
+                v.save()
+             for local in to_python(formvr2.cleaned_data['localsd3']):
+                v = Vulnerabilite(niveau='Faible',risquev=r2,local=HtiAdm3.objects.get(id=int(local)))
+                v.save()
+
+             #---------------------------------------------------------------------------
+             #-----------Save degre d'exposition et vlnerabilite a risque priorite 3---------------------
+             #---------------------------------------------------------------------------
+             r3 = perception.risques.get(priorite=3)
+                                        #...................Save degre d'exposition.......
+             for local in to_python(formr3.cleaned_data['localsd1']):
+                d = DegreDexposition(degre='Fortement',risqued=r3,local=HtiAdm3.objects.get(id=int(local)))
+                d.save()
+             for local in to_python(formr3.cleaned_data['localsd2']):
+                d = DegreDexposition(degre='Modérément',risqued=r3,local=HtiAdm3.objects.get(id=int(local)))
+                d.save()
+             for local in to_python(formr3.cleaned_data['localsd3']):
+                d = DegreDexposition(degre='Faiblement',risqued=r3,local=HtiAdm3.objects.get(id=int(local)))
+                d.save()
+
+                                        #...................Save vulnerabilite.......
+             for local in to_python(formvr3.cleaned_data['localsd1']):
+                v = Vulnerabilite(niveau='Forte',risquev=r3,local=HtiAdm3.objects.get(id=int(local)))
+                v.save()
+             for local in to_python(formvr3.cleaned_data['localsd2']):
+                v = Vulnerabilite(niveau='Modéré',risquev=r3,local=HtiAdm3.objects.get(id=int(local)))
+                v.save()
+             for local in to_python(formvr3.cleaned_data['localsd3']):
+                v = Vulnerabilite(niveau='Faible',risquev=r3,local=HtiAdm3.objects.get(id=int(local)))
+                v.save()
+
+
+
+             #---------------------------------------------------------------------------
+             #-----------Save degre d'exposition et vlnerabilite a risque priorite 4---------------------
+             #---------------------------------------------------------------------------
+             r4 = perception.risques.get(priorite=4)
+             for local in to_python(formr4.cleaned_data['localsd1']):
+                d = DegreDexposition(degre='Fortement',risqued=r4,local=HtiAdm3.objects.get(id=int(local)))
+                d.save()
+             for local in to_python(formr4.cleaned_data['localsd2']):
+                d = DegreDexposition(degre='Modérément',risqued=r4,local=HtiAdm3.objects.get(id=int(local)))
+                d.save()
+             for local in to_python(formr4.cleaned_data['localsd3']):
+                d = DegreDexposition(degre='Faiblement',risqued=r4,local=HtiAdm3.objects.get(id=int(local)))
+                d.save()
+
+                                        #...................Save vulnerabilite.......
+             for local in to_python(formvr4.cleaned_data['localsd1']):
+                v = Vulnerabilite(niveau='Forte',risquev=r4,local=HtiAdm3.objects.get(id=int(local)))
+                v.save()
+             for local in to_python(formvr4.cleaned_data['localsd2']):
+                v = Vulnerabilite(niveau='Modéré',risquev=r4,local=HtiAdm3.objects.get(id=int(local)))
+                v.save()
+             for local in to_python(formvr4.cleaned_data['localsd3']):
+                v = Vulnerabilite(niveau='Faible',risquev=r4,local=HtiAdm3.objects.get(id=int(local)))
+                v.save()
+             perception.enquete.complete = True
+             perception.enquete.save()
+             return redirect('/Enquetes')
          # else:
 
          #     return HttpResponse("Error")
@@ -164,48 +276,168 @@ def formEnqueteNext(request,id):
 
 
 def presenceinstitutionnelle(request,id):
-    # if not 'userid' in request.session:
-    #     return redirect("/")
-    # sections = HaitiAdm3Stats.objects.filter(commune='GONAIVE')
-    # if request.method=='GET':
-    #     form = PresenceInstitutForm()
-    # if request.method=='POST':
-    #     if form.is_valid():
-    #         instance = form.save(commit=False)
-    #         instance.enquete = Enquete.objects.get(id=id)
-    #         instance.save()
-    #
-    #     return redirect("/PresenceInstutionnelle")
+    if not 'userid' in request.session:
+        return redirect("/")
+    enquete = Enquete.objects.get(id=id)
+    presences = PresenceInstitutionnelle.objects.filter(enquete_id=id)
+    if request.method=='GET':
+        enquete = Enquete.objects.get(id=id)
+        form = PresenceInstitutForm(commune=enquete.local)
+    if request.method=='POST':
+        enquete = Enquete.objects.get(id=id)
+        form = PresenceInstitutForm(request.POST,commune=enquete.local)
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.enquete = Enquete.objects.get(id=id)
+            instance.save()
+
+        return redirect("/PresenceInstutionnelle/{}/".format(id))
     return render_to_response('enquete/presenceinstitutionelle.html', locals(), context_instance=RequestContext(request))
 
 
 def plansCommunauxForm(request,id):
-    # if not 'userid' in request.session:
-    #     return redirect("/")
-    # sections = HaitiAdm3Stats.objects.filter(commune=request.session['commune'])
-    # if request.method=='GET':
-    #     form = PlansCommunauxForm()
-    # if request.method=='POST':
-    #     return redirect("/PresenceInstutionnelle")
-    return render_to_response('enquete/presenceinstitutionelle.html', locals(), context_instance=RequestContext(request))
+    if not 'userid' in request.session:
+        return redirect("/")
+    enquete = Enquete.objects.get(id=id)
+    plans = PlansCommunaux.objects.filter(enquete_id=id)
+    if request.method=='GET':
+        enquete = Enquete.objects.get(id=id)
+        form = PlansCommunauxForm()
+    if request.method=='POST':
+        enquete = Enquete.objects.get(id=id)
+        form = PlansCommunauxForm(request.POST)
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.enquete = Enquete.objects.get(id=id)
+            instance.save()
+    return render_to_response('enquete/plan.html', locals(), context_instance=RequestContext(request))
+
+
+def materiels(request,id):
+    if not 'userid' in request.session:
+        return redirect("/")
+    enquete = Enquete.objects.get(id=id)
+    materiels = Materielles.objects.filter(enquete_id=id)
+    if request.method=='GET':
+        enquete = Enquete.objects.get(id=id)
+        form = MateriellesForm()
+    if request.method=='POST':
+        enquete = Enquete.objects.get(id=id)
+        form = MateriellesForm(request.POST)
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.enquete = Enquete.objects.get(id=id)
+            instance.save()
+    return render_to_response('enquete/materiels.html', locals(), context_instance=RequestContext(request))
 
 
 
 
-def presenceinstitutionnellelist(request,id):
-    # if not 'userid' in request.session:
-    #     return redirect("/")
-    # try:
-    #     presenceall = PresenceInstitutionnelle.objects.all()
-    #     presences = []
-    #     for p in presenceall:
-    #         if p.local.commune=="GONAIVES":
-    #             presences.append(p)
-    #
-    #
-    # except:
-    #     pass
-    return render_to_response('enquete/presenceinstitutionellelist.html', locals(), context_instance=RequestContext(request))
+def equipements(request,id):
+    if not 'userid' in request.session:
+        return redirect("/")
+    enquete = Enquete.objects.get(id=id)
+    equipements = Equipement.objects.filter(enquete_id=id)
+    if request.method=='GET':
+        enquete = Enquete.objects.get(id=id)
+        form = EquipementForm()
+    if request.method=='POST':
+        enquete = Enquete.objects.get(id=id)
+        form = EquipementForm(request.POST)
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.enquete = Enquete.objects.get(id=id)
+            instance.save()
+    return render_to_response('enquete/equipements.html', locals(), context_instance=RequestContext(request))
+
+def communications(request,id):
+    if not 'userid' in request.session:
+        return redirect("/")
+    enquete = Enquete.objects.get(id=id)
+    communications = MoyenDeCommunication.objects.filter(enquete_id=id)
+    if request.method=='GET':
+        enquete = Enquete.objects.get(id=id)
+        form = MoyenDeCommunicationForm()
+    if request.method=='POST':
+        enquete = Enquete.objects.get(id=id)
+        form = MoyenDeCommunicationForm(request.POST)
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.enquete = Enquete.objects.get(id=id)
+            instance.save()
+    return render_to_response('enquete/communications.html', locals(), context_instance=RequestContext(request))
+
+
+def tranports(request,id):
+    if not 'userid' in request.session:
+        return redirect("/")
+    enquete = Enquete.objects.get(id=id)
+    transports = MoyenDeTransport.objects.filter(enquete_id=id)
+    if request.method=='GET':
+        enquete = Enquete.objects.get(id=id)
+        form = MoyenDeTransportForm()
+    if request.method=='POST':
+        enquete = Enquete.objects.get(id=id)
+        form = MoyenDeTransportForm(request.POST)
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.enquete = Enquete.objects.get(id=id)
+            instance.save()
+    return render_to_response('enquete/transports.html', locals(), context_instance=RequestContext(request))
+
+
+def ressourceshumaines(request,id):
+    if not 'userid' in request.session:
+        return redirect("/")
+    enquete = Enquete.objects.get(id=id)
+    ressources = RessourceHumaine.objects.filter(enquete_id=id)
+    if request.method=='GET':
+        enquete = Enquete.objects.get(id=id)
+        form = RessourceHumaineForm()
+    if request.method=='POST':
+        enquete = Enquete.objects.get(id=id)
+        form = RessourceHumaineForm(request.POST)
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.enquete = Enquete.objects.get(id=id)
+            instance.save()
+    return render_to_response('enquete/ressources.html', locals(), context_instance=RequestContext(request))
+
+
+def interventions(request,id):
+    if not 'userid' in request.session:
+        return redirect("/")
+    enquete = Enquete.objects.get(id=id)
+    interventions = RessourceDIntervention.objects.filter(enquete_id=id)
+    if request.method=='GET':
+        enquete = Enquete.objects.get(id=id)
+        form = RessourceDInterventionForm()
+    if request.method=='POST':
+        enquete = Enquete.objects.get(id=id)
+        form = RessourceDInterventionForm(request.POST)
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.enquete = Enquete.objects.get(id=id)
+            instance.save()
+    return render_to_response('enquete/intervention.html', locals(), context_instance=RequestContext(request))
+
+def evaluations(request,id):
+    if not 'userid' in request.session:
+        return redirect("/")
+    enquete = Enquete.objects.get(id=id)
+    evaluations = Evaluation.objects.filter(enquete_id=id)
+    if request.method=='GET':
+        enquete = Enquete.objects.get(id=id)
+        form = EvaluationForm()
+    if request.method=='POST':
+        enquete = Enquete.objects.get(id=id)
+        form = EvaluationForm(request.POST)
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.enquete = Enquete.objects.get(id=id)
+            instance.save()
+    return render_to_response('enquete/evaluations.html', locals(), context_instance=RequestContext(request))
+
 
 def sections(request):
     # if not 'userid' in request.session:
@@ -235,6 +467,13 @@ def editcommune(request,id):
     # haitiAdm3Stats = HaitiAdm3Stats.objects.get(id=id)
     # form = CommuneForm(instance=haitiAdm3Stats)
     return render_to_response('editcommune.html', locals(), context_instance=RequestContext(request))
+
+def jsonmapbase(request):
+    query = HtiAdm1.objects.all()
+    djf = Django.Django(geodjango="geom", properties=['id_0'])  #['commune','niveau','departemen','section']
+    geoj = GeoJSON.GeoJSON()
+    s = geoj.encode(djf.decode(query))
+    return HttpResponse(s)
 
 def jsonsectionmaps(request):
     query = HtiAdm3.objects.all()
@@ -411,29 +650,70 @@ def mapdegreDexposition(request):
 
 
 def risques(request):
-    risques = Perception.objects.all()
+    zones = HtiAdm3.objects.raw('SELECT * FROM public."hti_adm3" INNER JOIN public."gestionR_degredexposition" ON public."hti_adm3".id=public."gestionR_degredexposition".local_id INNER JOIN  public."gestionR_vulnerabilite" ON public."hti_adm3".id=public."gestionR_vulnerabilite".local_id;')
+    # for p in HtiAdm3.objects.raw('SELECT * FROM public."gestionR_vulnerabilite" INNER JOIN public."gestionR_degredexposition" ON public."gestionR_vulnerabilite".risque_id=public."gestionR_degredexposition".risque_id;'):
+    #     print p.name_3
+    # zones = Perception.objects
+    dataManager = DataManager()
     titletable = '1, 2, 3 et 4'
     if 'd' in request.GET:
         try:
             if request.GET['p']=='1':
-               # risques = Risque.objects.filter(priorite=1)
+               # zones = Risque.objects.filter(priorite=1)
                titletable = '1'
                p = '1'
             if request.GET['p']=='2':
-               # risques = Risque.objects.filter(priorite=2)
+               # zones = Risque.objects.filter(priorite=2)
                titletable = '2'
                p = '2'
             if request.GET['p']=='3':
-               # risques = Risque.objects.filter(priorite=3)
+               # zones = Risque.objects.filter(priorite=3)
                titletable = '3'
                p = '3'
             if request.GET['p']=='4':
-               # risques = Risque.objects.filter(priorite=4)
+               # zones = Risque.objects.filter(priorite=4)
                titletable = '4'
                p = '4'
         except ValueError:
             pass
     return render_to_response('risque/list.html', locals(), context_instance=RequestContext(request))
+
+
+def jsonrisques(request):
+    sql = """SELECT * FROM public."hti_adm3" INNER JOIN public."gestionR_degredexposition"
+ON public."hti_adm3".id=public."gestionR_degredexposition".local_id
+INNER JOIN  public."gestionR_vulnerabilite" ON public."hti_adm3".id=public."gestionR_vulnerabilite".local_id
+INNER JOIN public."gestionR_risque" ON public."gestionR_risque".id=public."gestionR_vulnerabilite".risquev_id;
+
+            """
+    # AND public."gestionR_risque".id=public."gestionR_degredexposition".risqued_id;
+    query = HtiAdm3.objects.raw(sql)
+    djf = Django.Django(geodjango="geom", properties=['name_1','name_2','name_3', 'degre', 'niveau','risque'])  #['commune','niveau','departemen','section']
+    geoj = GeoJSON.GeoJSON()
+    s = geoj.encode(djf.decode(query))
+    return HttpResponse(s)
+
+def maprisque(request):
+    return render_to_response('risque/map.html', locals(), context_instance=RequestContext(request))
+
+def jsonRisquesection(request):
+    sql = """SELECT public."gestionR_risque".id, public."gestionR_risque".risque FROM public."gestionR_risque"
+             INNER JOIN public."gestionR_vulnerabilite" ON public."gestionR_risque".id=public."gestionR_vulnerabilite".risquev_id
+             AND public."gestionR_vulnerabilite".local_id=23
+             INNER JOIN public."gestionR_degredexposition" ON public."gestionR_risque".id=public."gestionR_degredexposition".risqued_id
+             AND public."gestionR_degredexposition".local_id=23"""
+    query = HtiAdm3.objects.raw(sql)
+    data = {}
+    l = []
+    for item in query:
+        l.append(str(item))
+    data['data']=l
+    print data
+
+    return HttpResponse(json.dumps(data, ensure_ascii=False))
+
+
+
 def jsondegreDexposition(request):
     degreDexpositions = DegreDexposition.objects.all()
     if 'd' in request.GET:
@@ -456,6 +736,7 @@ def jsondegreDexposition(request):
     geoj = GeoJSON.GeoJSON()
     s = geoj.encode(djf.decode(query))
     return HttpResponse(s)
+
 def mapdegreDexposition(request):
     if 'd' in request.GET:
         try:

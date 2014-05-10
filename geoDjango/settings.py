@@ -38,7 +38,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.gis',
     'gestionR',
-    'geoDjango',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -55,7 +54,7 @@ ROOT_URLCONF = 'geoDjango.urls'
 WSGI_APPLICATION = 'geoDjango.wsgi.application'
 
 TEMPLATE_DIRS = (
-    os.path.join(os.path.dirname(__file__), 'template').replace('\\','/'),
+    os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
 )
 
 
@@ -74,10 +73,8 @@ DATABASES = {
  }
 
 
-GEOS_LIBRARY_PATH = '/app/.geodjango/geos/lib/libgeos_c.so'
-
-GDAL_LIBRARY_PATH = '/app/.geodjango/gdal/lib/libgdal.so'
-
+GDAL_LIBRARY_PATH = 'venv/Lib/site-packages/gdal/gdal110.dll'
+GEOS_LIBRARY_PATH = 'venv/Lib/site-packages/geos/bin/geos_c.dll'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
@@ -104,29 +101,5 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
-    "geoDjango/template/static",
+    "geoDjango/templates/static",
 )
-
-
-import dj_database_url
-DATABASES['default'] = dj_database_url.config()
-DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
-
-
-# # Honor the 'X-Forwarded-Proto' header for request.is_secure()
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-#
-# # Allow all host headers
-ALLOWED_HOSTS = ['*']
-
-#Static asset configuration
-import os
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = 'staticfiles'
-STATIC_URL = '/static/'
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-    "geoDjango/template/static",
-)
-

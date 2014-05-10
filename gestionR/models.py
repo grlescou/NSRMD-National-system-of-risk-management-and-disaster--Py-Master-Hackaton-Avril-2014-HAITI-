@@ -151,6 +151,8 @@ class Risque(models.Model):
     #     for vulnerabilite in
 
 
+
+
 class DegreDexposition(models.Model):
     DEGRE = (
         (u'Fortement',u'Fortement'),
@@ -158,7 +160,7 @@ class DegreDexposition(models.Model):
         (u'Faiblement',u'Faiblement'),
     )
     degre = models.CharField(max_length=100,choices=DEGRE)
-    risque = models.ForeignKey(Risque)
+    risqued = models.ForeignKey(Risque)
     local = models.ForeignKey(HtiAdm3)
 
 class Vulnerabilite(models.Model):
@@ -169,7 +171,7 @@ class Vulnerabilite(models.Model):
     )
     niveau = models.CharField(max_length=50,choices=NIVEAU)
     local = models.ForeignKey(HtiAdm3)
-    risque = models.ForeignKey(Risque)
+    risquev = models.ForeignKey(Risque)
 
 
 class Perception(models.Model):
@@ -188,16 +190,18 @@ class PresenceInstitutionnelle(models.Model):
     local = models.ForeignKey(HtiAdm3)
     enquete = models.ForeignKey(Enquete)
     existenceclpc = models.CharField("Existence de CLPC :",max_length=50,choices=EXISTENCE,default=None)
-    # def resultat(self):
-    #     if self.existenceclpc.__eq__(self.EXISTENCE[0][1]):
-    #         return 1/len(HaitiAdm3Stats.objects.filter(commune=self.local.commune))
-    #     else:
-    #         return 0
-    # def perception(cls,id):
-    #     for p in PresenceInstitutionnelle.objects.all():
-    #         if p.id == id:
-    #             return  p
-    #     return None
+    def resultat(self):
+        if self.existenceclpc.__eq__(self.EXISTENCE[0][1]):
+            return float(1)/float(len(HtiAdm3.objects.filter(id_2=self.local.id_2)))*100
+        else:
+            return 0
+    def objectif(self):
+        return float(1)/float(len(HtiAdm3.objects.filter(id_2=self.local.id_2)))*100
+    def perception(cls,id):
+        for p in PresenceInstitutionnelle.objects.all():
+            if p.id == id:
+                return  p
+        return None
 
 
 
@@ -215,15 +219,17 @@ class PlansCommunaux(models.Model):
         (u'Plan d\'évacuation',u'Plan d\'évacuation'),
     )
     enquete = models.ForeignKey(Enquete)
-    type = models.CharField(max_length=300,choices=TYPE,unique_for_year=True)
-    existenceplan = models.CharField(max_length=150,choices=EXISTENCE)
+    type = models.CharField("Type",max_length=300,choices=TYPE)
+    existenceplan = models.CharField("Existence du plan",max_length=150,choices=EXISTENCE)
     def resultat(self):
-        if self.existenceplan.__eq__(self.EXISTENCE[0][2]):
-            return 0.00
+        if self.existenceplan.__eq__(self.EXISTENCE[2][1]):
+            return 0.00 * 100
         elif self.existenceplan.__eq__(self.EXISTENCE[0][1]):
-            return 0.125
+            return 0.125 * 100
         else:
-            return 0.25
+            return 0.25 * 100
+    def objectif(self):
+        return 0.25*100
 
 class Materielles(models.Model):
     TYPE = (
@@ -237,15 +243,18 @@ class Materielles(models.Model):
         (u'Non',u'Non'),
     )
     enquete = models.ForeignKey(Enquete)
-    type = models.CharField(max_length=300,unique_for_year=True)
+    type = models.CharField(max_length=300,choices=TYPE)
     existence = models.CharField(max_length=300,choices=EXISTENCE)
     def resultat(self):
-        if self.existence.__eq__(self.EXISTENCE[0][2]):
-            return 0.00
-        elif self.existence.__eq__(self.EXISTENCE[0][1]):
-            return 0.1667
+        if self.existence.__eq__(self.EXISTENCE[2][1]):
+            return 0.00 * 100
+        elif self.existence.__eq__(self.EXISTENCE[1][1]):
+            return 0.1667 * 100
         else:
-            return 0.3333
+            return 0.3333 * 100
+
+    def objectif(self):
+        return 0.3333 * 100
 
 
 class Equipement(models.Model):
@@ -256,11 +265,13 @@ class Equipement(models.Model):
         (u'Matériels de déblaiement',u'Matériels de déblaiement'),
     )
     enquete = models.ForeignKey(Enquete)
-    type = models.CharField(max_length=100,choices=TYPE,unique_for_year=True)
-    quantitedisponible = models.PositiveIntegerField()
-    quantitenecessaire = models.PositiveIntegerField()
+    type = models.CharField(max_length=100,choices=TYPE)
+    quantitedisponible = models.PositiveIntegerField("Quantité disponible")
+    quantitenecessaire = models.PositiveIntegerField("Quantité nécessaire")
     def resultat(self):
-        return (self.quantitedisponible/self.quantitenecessaire) * 0.25
+        return (float(self.quantitedisponible)/float(self.quantitenecessaire)) * 0.25
+    def objectif(self):
+        return 0.25 * 100
 
 class MoyenDeCommunication(models.Model):
     TYPE = (
@@ -270,11 +281,13 @@ class MoyenDeCommunication(models.Model):
         (u'Internet',u'Internet'),
     )
     enquete = models.ForeignKey(Enquete)
-    type = models.CharField(max_length=300,choices=TYPE,unique_for_year=True)
-    quantitedisponible = models.PositiveIntegerField()
-    quantitenecessaire = models.PositiveIntegerField()
+    type = models.CharField(max_length=300,choices=TYPE)
+    quantitedisponible = models.PositiveIntegerField("Quantité disponible")
+    quantitenecessaire = models.PositiveIntegerField("Quantité nécessaire")
     def resultat(self):
-        return (self.quantitedisponible/self.quantitenecessaire) * 0.25
+        return (float(self.quantitedisponible/self.quantitenecessaire)) * 0.25
+    def objectif(self):
+        return 0.25 * 100
 
 class MoyenDeTransport(models.Model):
     TYPE = (
@@ -285,11 +298,13 @@ class MoyenDeTransport(models.Model):
         (u'Ambulances',u'Ambulances'),
     )
     enquete = models.ForeignKey(Enquete)
-    type = models.CharField(max_length=300,choices=TYPE,unique_for_year=True)
-    quantitedisponible = models.PositiveIntegerField()
-    quantitenecessaire = models.PositiveIntegerField()
+    type = models.CharField(max_length=300,choices=TYPE)
+    quantitedisponible = models.PositiveIntegerField("Quantité disponible")
+    quantitenecessaire = models.PositiveIntegerField("Quantité nécessaire")
     def resultat(self):
-        return (self.quantitedisponible/self.quantitenecessaire) * 0.2
+        return (float(self.quantitedisponible)/float(self.quantitenecessaire)) * 0.2
+    def objectif(self):
+        return 0.2 * 100
 
 class RessourceHumaine(models.Model):
     TYPE = (
@@ -304,11 +319,13 @@ class RessourceHumaine(models.Model):
         (u'GESTION PROJET',u'GESTION PROJET'),
     )
     enquete = models.ForeignKey(Enquete)
-    type = models.CharField(max_length=50,choices=TYPE,unique_for_year=True)
-    quantitedisponible = models.PositiveIntegerField()
-    quantitenecessaire = models.PositiveIntegerField()
+    type = models.CharField(max_length=50,choices=TYPE)
+    quantitedisponible = models.PositiveIntegerField("Quantité disponible")
+    quantitenecessaire = models.PositiveIntegerField("Quantité nécessaire")
     def resultat(self):
-        return (self.quantitedisponible/self.quantitenecessaire) * (1/9)
+        return (float(self.quantitedisponible)/float(self.quantitenecessaire)) * (float(1)/float(9))
+    def objectif(self):
+        return 0.1 * 100
 
 class RessourceDIntervention(models.Model):
     PRESENCE = (
@@ -321,13 +338,16 @@ class RessourceDIntervention(models.Model):
         (u'Pompiers',u'Pompiers'),
     )
     enquete = models.ForeignKey(Enquete)
-    type = models.CharField(max_length=100,choices=TYPE,unique_for_year=True)
+    type = models.CharField(max_length=100,choices=TYPE)
     presence = models.CharField(max_length=10,choices=PRESENCE)
     def resultat(self):
         if self.presence.__eq__(self.PRESENCE[0][0]):
-            return 0.3333
+            return 0.3333 * 100
         else:
-            return 0.00
+            return 0.00 * 100
+
+    def objectif(self):
+        return 0.3333 * 100
 
 class Evaluation(models.Model):
     enquete = models.ForeignKey(Enquete)

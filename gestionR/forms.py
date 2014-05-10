@@ -55,17 +55,6 @@ class DegreDexpositionForm(forms.Form):
         self.fields['localsd2'].label = 'Modérément'
         self.fields['localsd3'].label = 'Faiblement'
 
-# class DegreDexpositionForm(forms.ModelForm):
-#     class Meta:
-#         model = DegreDexposition
-#         exclude = ['risque']
-#     def __init__(self, *args, **kwargs):
-#         commune  = kwargs.pop('commune')
-#         super(DegreDexpositionForm, self).__init__(*args, **kwargs)
-#         # choix = [
-#         #     (c.id,c)for c in HtiAdm3.objects.filter(id_2=commune.id)
-#         # ]
-#         self.fields['local'].queryset = HtiAdm3.objects.filter(id_2=commune.id)
 
 
 class VulnerabiliteForm(forms.Form):
@@ -123,61 +112,65 @@ class VulnerabiliteForm(forms.Form):
 #         return self.commune
 #
 #
-# class PresenceInstitutForm(forms.ModelForm):
+class PresenceInstitutForm(forms.ModelForm):
+
+    class Meta:
+        model = PresenceInstitutionnelle
+        exclude = ['enquete']
+        widgets = {
+            'existenceclpc':RadioSelect(),
+        }
+    def __init__(self, *args, **kwargs):
+        commune  = kwargs.pop('commune')
+        super(PresenceInstitutForm, self).__init__(*args, **kwargs)
+        self.fields['local'].queryset = HtiAdm3.objects.filter(id_2=commune.id)
+
 #
-#     class Meta:
-#         model = PresenceInstitutionnelle
-#         exclude = ['enquete']
-#         widgets = {
-#             'existenceclpc':RadioSelect(),
-#         }
+class PlansCommunauxForm(forms.ModelForm):
+    class Meta:
+        model = PlansCommunaux
+        exclude = ['enquete']
+
 #
-#
-# class PlansCommunauxForm(forms.ModelForm):
-#     class Meta:
-#         model = PlansCommunaux
-#         exclude = ['enquete']
-#
-#
-# class MateriellesForm(forms.ModelForm):
-#     class Meta:
-#         model = HaitiAdm3Stats
-#         exclude = ['enquete']
-#
-#
-# class EquipementForm (forms.ModelForm):
-#     class Meta:
-#         model = HaitiAdm3Stats
-#         exclude = ['enquete']
+class MateriellesForm(forms.ModelForm):
+    class Meta:
+        model = Materielles
+        exclude = ['enquete']
 #
 #
-# class MoyenDeCommunicationForm(forms.ModelForm):
-#     class Meta:
-#         model = HaitiAdm3Stats
-#         exclude = ['enquete']
+class EquipementForm (forms.ModelForm):
+    class Meta:
+        model = Equipement
+        exclude = ['enquete']
 #
 #
-#
-#
-# class MoyenDeTransportForm(forms.ModelForm):
-#     class Meta:
-#         model = HaitiAdm3Stats
-#         exclude = ['enquete']
+class MoyenDeCommunicationForm(forms.ModelForm):
+    class Meta:
+        model = MoyenDeCommunication
+        exclude = ['enquete']
 #
 #
 #
-# class RessourceHumaineForm(forms.ModelForm):
-#     class Meta:
-#         model = HaitiAdm3Stats
-#         exclude = ['enquete']
 #
-# class RessourceDInterventionForm(forms.ModelForm):
-#     class Meta:
-#         model = HaitiAdm3Stats
-#         exclude = ['enquete']
-#
-#
-# class EvaluationForm(forms.ModelForm):
-#     class Meta:
-#         model = HaitiAdm3Stats
-#         exclude = ['enquete']
+class MoyenDeTransportForm(forms.ModelForm):
+    class Meta:
+        model = MoyenDeTransport
+        exclude = ['enquete']
+
+
+
+class RessourceHumaineForm(forms.ModelForm):
+    class Meta:
+        model = RessourceHumaine
+        exclude = ['enquete']
+
+class RessourceDInterventionForm(forms.ModelForm):
+    class Meta:
+        model = RessourceDIntervention
+        exclude = ['enquete']
+
+
+class EvaluationForm(forms.ModelForm):
+    class Meta:
+        model = Evaluation
+        exclude = ['enquete']

@@ -1,4 +1,4 @@
-from gestionR.models import HtiAdm3, DegreDexposition, Vulnerabilite
+from gestionR.models import HtiAdm3, DegreDexposition, Vulnerabilite, Risque
 
 __author__ = 'Suy'
 
@@ -17,4 +17,9 @@ class DataManager():
                     ld=d
             data[local.id] = (local,ld,lv)
         return data
+    def getrisque(self,id):
+        return Risque.objects.get(id=id).risque
+
+    def getpriorite(self,id):
+        return Risque.objects.get(id=id).priorite
 

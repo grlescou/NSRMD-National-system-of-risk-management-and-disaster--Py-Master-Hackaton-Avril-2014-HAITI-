@@ -1,0 +1,4 @@
+{% load staticfiles %}
+.ic-table-edit { background-image: url("../images/icons/table/actions-edit.png"); }
+.ic-table-delete { background-image: url("../images/icons/table/actions-delete.png"); }
+.ic-table-details { background-image: url("../images/icons/table/actions-details.png"); }

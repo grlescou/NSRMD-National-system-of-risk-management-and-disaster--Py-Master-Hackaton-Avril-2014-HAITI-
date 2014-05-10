@@ -1,0 +1,81 @@
+{% extends 'masterpage.html' %}
+{% block content %}
+{% load suivitag %}
+<div id="page-wrapper">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-money"></i>&nbsp;Zones degré d'exposition {{ titletable }}</h3>
+              </div>
+              <div class="panel-body">
+                <div class="table-responsive">
+                  <table class="table table-bordered table-hover table-striped tablesorter">
+                    <thead>
+                        <tr>
+                            <th nowrap rowspan=2 valign=top >
+                                Communes
+                            </th>
+                            <th nowrap rowspan=2 valign=top >
+                                Sections communales
+                            </th>
+                            <th nowrap colspan=3 valign=top >
+                                Degré d'exposition
+                            </th>
+                            <th nowrap colspan=3 valign=top >
+                                Niveau de vulnérabilité
+                            </th>
+                        </tr>
+
+                        <tr >
+                            <th width=36 nowrap valign=top >
+                                Risque
+                            </th>
+                            <th nowrap valign=top >
+                                Priorité
+                            </th>
+                            <th nowrap valign=top >
+                                Degré
+                            </th>
+                            <th width=36 nowrap valign=top >
+                                Risque
+                            </th>
+                            <th nowrap valign=top >
+                                Priorité
+                            </th>
+                            <th nowrap valign=top >
+                                Niveau
+                            </th>
+                        </tr>
+                    </thead><td></td>
+                    <tbody>
+                        {% for zone in zones %}
+                            <tr>
+                                <td>{{ zone.name_2 }}</td>
+                                <td>{{ zone.name_3 }}</td>
+                                <td>{{ dataManager|args:zone.risqued_id|call:"getrisque" }}</td>
+                                <td>{{ dataManager|args:zone.risqued_id|call:"getpriorite" }}</td>
+                                <td>{{ zone.degre }}</td>
+                                <td>{{ zone.name_2 }}</td>
+                                <td>{{ zone.name_2 }}</td>
+                                <td>{{ zone.niveau }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                  </table>
+                </div>
+                <div class="text-right">
+                  {% if d %}
+                    <a href="/test/MapdegreDexposition/?n={{ d }}" >View on map <i class="fa fa-arrow-circle-right"></i></a>
+                  {% else %}
+                    <a href="/test/MapdegreDexposition/" >View on map <i class="fa fa-arrow-circle-right"></i></a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.row -->
+
+      </div><!-- /#page-wrapper -->
+{% endblock %}
