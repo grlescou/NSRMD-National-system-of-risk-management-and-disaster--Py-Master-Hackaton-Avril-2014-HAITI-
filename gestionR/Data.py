@@ -13,6 +13,9 @@ RISQUE = (
         ('Incendie','Incendie'),
         ('Erosion','Erosion'),
     )
+
+
+
 EFFETSEG = (
     (u'Rupture de système de communication',u'Rupture de système de communication'),
     (u'Interruption du courant électrique',u'Interruption du courant électrique'),
@@ -23,6 +26,8 @@ EFFETSEG = (
     (u'Tarissement de sources à certains endroits',u'Tarissement de sources à certains endroits'),
 )
 
+
+#gggasg
 DEGRE = (
     ("Fortement","Fortement"),
     ("Moderement","Moderement"),
