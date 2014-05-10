@@ -1,0 +1,8 @@
+{% extends "gis/kml/base.kml" %}
+{% load dynamic_attribute %}
+{% block placemarks %}{% for place in geomdata %}
+  <Placemark>
+	{% for field in fields %}<{{fields|dict_lookup:field}}>{{place|dynamic_attr:field}}</{{fields|dict_lookup:field}}>
+	{% endfor %}
+    {{ place.kml|safe }}
+  </Placemark>{% endfor %}{% endblock %}

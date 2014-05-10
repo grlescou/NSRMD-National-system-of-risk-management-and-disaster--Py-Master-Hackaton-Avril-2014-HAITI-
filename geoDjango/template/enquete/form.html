@@ -1,0 +1,153 @@
+{% extends 'masterpage.html' %}
+{% load staticfiles %}
+{% block content %}
+    <div id="page-wrapper">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 style="color: #00008B">Perception de l'exposition aux ménaces</h1>
+
+
+          </div>
+        </div><!-- /.row -->
+
+        <div class="row">
+          <div class="col-lg-6">
+
+            <form name="Example" action="/FormEnquete" role="form" method="post">
+                {% csrf_token %}
+               <div>{{ form.errors }}{{ formp.errors }}</div>
+              <div class="form-group">
+                {{ form.local.label_tag }}
+                {{ form.local }}
+                <p class="help-block">{{ form.debutenquete.error_messages }}</p>
+              </div>
+              <div class="form-group">
+                {{ form.debutenquete.label_tag }}
+                {{ form.debutenquete }}
+                <p class="help-block">{{ form.debutenquete.error_messages }}</p>
+              </div>
+
+              <div class="form-group">
+                {{ form.finenquete.label_tag }}
+                {{ form.finenquete }}
+                <p class="help-block">{{ form.finenquete.error_messages }}</p>
+              </div>
+
+              <div class="form-group">
+                <label>Risques</label>
+                <div class="">
+                  {{ formp.risque }}
+{#                    <span  style="background: url({% static 'image/arrow-right.png' %}) center right no-repeat;width: 200px;height: 30px;">#}
+{#                        <a href="#" name="sendtoright" id="sendtoright" >&nbsp;</a>#}
+{#                    </span>#}
+{#                    <span style="background: url({% static 'image/arrow-left.png' %}) center left no-repeat;width: 200px;height: 30px;">#}
+{#                       <a href="#" name="sendtoleft" id="sendtoleft" >&nbsp;</a>#}
+{#                    </span>#}
+{#                  {{ formp.risqueseq }}#}
+
+	                <!--<script type="text/javascript" src="{% static 'jscript/jquery.multi-select.js' %}"></script>
+                    <script type="text/javascript">
+                        $(function(){
+                          $('#id_risque').multiSelect({ keepOrder: true });
+                        });
+                    </script>-->
+{#                    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>#}
+{#                  <script type="text/javascript">#}
+{#                    $(document).ready(function(){#}
+{#                        $(document).on("click",'#sendtoright',function() {#}
+{#                     //alert("hello ");#}
+{##}
+{##}
+{#                var selectVal = $('#id_risque :selected').val();#}
+{##}
+{#                //new Option('Foo', 'foo', true, true)#}
+{#                $('#id_risqueR').append("<option >"+selectVal+"</option>");#}
+{#                $('#id_priorite1').append("<option >"+selectVal+"</option>");#}
+{#                $('#id_priorite2').append("<option >"+selectVal+"</option>");#}
+{#                $('#id_priorite3').append("<option >"+selectVal+"</option>");#}
+{#                $('#id_priorite4').append("<option >"+selectVal+"</option>");#}
+{#                //alert(selectVal);#}
+{##}
+{#                });#}
+{#                 });#}
+{##}
+{#                /*<script type="text/javascript" src="{% static 'jscript/perceptionform.js' %}">*/#}
+{#                </script>#}
+                </div>
+
+              </div>
+
+              <div class="form-group">
+                <h4 style="color: #008800;">2. Risques Secondaires</h4>
+                  {% for inp in formp.risqueseg %}
+                    {{ inp }}<br/>
+                  {% endfor %}
+              </div>
+
+              <div class="form-group">
+                <h4 style="color: #008800;">3. Priorisation des risques</h4>
+                    {{ formp.priorite1.label_tag }}&emsp;{{ formp.priorite1 }}<br/>
+                    {{ formp.priorite2.label_tag }}&emsp;{{ formp.priorite2 }}<br/>
+                    {{ formp.priorite3.label_tag }}&emsp;{{ formp.priorite3 }}<br/>
+                    {{ formp.priorite4.label_tag }}&emsp;{{ formp.priorite4 }}<br/>
+              </div>
+               <button type="submit" class="btn btn-default">Submit Button</button>
+              <button type="reset" class="btn btn-default">Reset Button</button>
+
+{#              <div class="form-group">#}
+{#                <h4 style="color: #008800;">4. Section communales / Localités exposés et degré d'exposition</h4>#}
+{#                  <h5 style="color: #008800;">4. Quelles communes / section communales sont les plus exposees aux risques prioritaire identifiees ?</h5>#}
+{#                   <table>#}
+{##}
+{#							<thead>#}
+{##}
+{#								<tr>#}
+{#									<th>Risques</th>#}
+{#                                    <th>Degre d'exposition</th>#}
+{#                                    <th>Sections communales</th>#}
+{#								</tr>#}
+{##}
+{#							</thead>#}
+{##}
+{#                       <tbody>#}
+{#                       <tr>#}
+{#                           <td>#}
+{#                               {{ form.priorite1.label_tag }}&emsp;{{ form.priorite1 }}#}
+{#                           </td>#}
+{#                           <td>#}
+{#                               {{ form.degre.label_tag }}&emsp;{{ form.degre }}#}
+{#                           </td>#}
+{#                           <td>{{form.setion.label_tag}}&emsp;{{form.section}}</td>#}
+{#                       </tr>#}
+{#                       <tr>#}
+{#                           <td>{{ form.priorite2.label_tag }}&emsp;{{ form.priorite2 }}</td>#}
+{#                           <td>{{ form.degre.label_tag }}&emsp;{{ form.degre }}</td>#}
+{#                           <td>{{form.setion.label_tag}}&emsp;{{form.section}}</td>#}
+{#                       </tr>#}
+{#                       <tr>#}
+{#                           <td>{{ form.priorite3.label_tag }}&emsp;{{ form.priorite3 }}</td>#}
+{#                           <td>{{ form.degre.label_tag }}&emsp;{{ form.degre }}</td>#}
+{#                           <td>{{form.setion.label_tag}}&emsp;{{form.section}}</td>#}
+{#                       </tr>#}
+{#                       <tr>#}
+{#                           <td>{{ form.priorite4.label_tag }}&emsp;{{ form.priorite4 }}</td>#}
+{#                           <td>{{ form.degre.label_tag }}&emsp;{{ form.degre }}</td>#}
+{#                           <td>{{form.setion.label_tag}}&emsp;{{form.section}}</td>#}
+{#                       </tr>#}
+{##}
+{#                       </tbody>#}
+{##}
+{#                    </table>#}
+{#              </div>#}
+
+
+            </form>
+
+          </div>
+
+        </div><!-- /.row -->
+
+      </div><!-- /#page-wrapper -->
+
+{% endblock %}
