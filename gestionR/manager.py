@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+#-*- coding: utf-8 -*-
 from gestionR.models import HtiAdm3, DegreDexposition, Vulnerabilite, Risque
 
 __author__ = 'Suy'
