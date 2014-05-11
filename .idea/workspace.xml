@@ -53,7 +53,7 @@
       <file leaf-file-name="map.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/geoDjango/templates/risque/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="865" column="12" selection-start="31403" selection-end="31403" vertical-scroll-proportion="0.9481707" vertical-offset="14083" max-vertical-offset="14841">
+            <state line="416" column="26" selection-start="14279" selection-end="14279" vertical-scroll-proportion="0.49695122" vertical-offset="6746" max-vertical-offset="14858">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -776,7 +776,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/geoDjango/templates/risque/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="865" column="12" selection-start="31403" selection-end="31403" vertical-scroll-proportion="0.9481707" vertical-offset="14083" max-vertical-offset="14841">
+        <state line="416" column="26" selection-start="14279" selection-end="14279" vertical-scroll-proportion="0.49695122" vertical-offset="6746" max-vertical-offset="14858">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
