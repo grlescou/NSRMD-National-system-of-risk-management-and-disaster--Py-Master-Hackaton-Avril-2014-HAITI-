@@ -407,9 +407,14 @@ var style = new OpenLayers.Style();
                             </select>
                         </form>
 
+            {% load staticfiles %}
 
 
-		<script src="{% static 'jscript/jquery-chosen.js' %}" type="text/javascript" ></script>
+    </div>
+    <div id="map">
+
+    </div>
+    <script src="{% static 'jscript/jquery-chosen.js' %}" type="text/javascript" ></script>
     <script type="text/javascript">
         $(function() {
             $(".chosen").chosen();
@@ -859,9 +864,5 @@ var style = new OpenLayers.Style();
           direction: rtl;
         }
     </style>
-    </div>
-    <div id="map">
-
-    </div>
 </body>
 </html>
