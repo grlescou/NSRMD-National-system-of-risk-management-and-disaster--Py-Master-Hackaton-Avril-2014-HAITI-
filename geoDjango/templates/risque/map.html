@@ -145,8 +145,15 @@
                                              20037508, 20037508.34)
         }
 
+        optionsMap = {
+            projection: new OpenLayers.Projection("EPSG:4326"),
+            units: "m",
+            maxResolution: 156543.0339
+        }
+
+
             function init(){
-               map = new OpenLayers.Map('map');
+               map = new OpenLayers.Map('map',optionsMap);
 
                 var lonLat = new OpenLayers.LonLat(-72.179833000000000, 19.120622000000000);
 
@@ -319,11 +326,8 @@ var style = new OpenLayers.Style();
                     //-------------------------------------------------------------------
 
                 map.addLayers([OSM, gsat,gsat, gphy, gmap, ghyb,layer,  layerbase]);
-               // map.addControl(new OpenLayers.Control.MousePosition());
-  map.events.register("mousemove", map, function (e) {
-    var position = e.map.getLonLatFromViewPortPx(e.xy);
-    OpenLayers.Util.getElement("tooltip").innerHTML = "<label>Latitude: " + position.lat + "</label><br/><label>Longitude: " + position.lon + "</label>";
-    });
+                map.addControl(new OpenLayers.Control.MousePosition());
+
                 map.zoomToExtent(new OpenLayers.Bounds(
                     -3.92, 44.34, 4.87, 49.55
                 ));
