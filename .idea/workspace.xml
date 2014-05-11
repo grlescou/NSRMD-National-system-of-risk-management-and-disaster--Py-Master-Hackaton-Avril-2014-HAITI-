@@ -53,12 +53,30 @@
       <file leaf-file-name="map.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/geoDjango/templates/risque/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="301" column="0" selection-start="9761" selection-end="9761" vertical-scroll-proportion="0.4862805" vertical-offset="4798" max-vertical-offset="6698">
+            <state line="6" column="61" selection-start="229" selection-end="229" vertical-scroll-proportion="-1.9954268" vertical-offset="1411" max-vertical-offset="6800">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/geoDjango/templates/degredexposition/list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1037">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="masterpage.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/geoDjango/templates/masterpage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="4" selection-start="428" selection-end="494" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="10591">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -67,15 +85,6 @@
         <entry file="file://$PROJECT_DIR$/geoDjango/templates/static/jscript/GeoExt/examples/popup.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="61" column="0" selection-start="1699" selection-end="1699" vertical-scroll-proportion="0.0" vertical-offset="614" max-vertical-offset="1581">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="suivitag.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gestionR/templatetags/suivitag.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="26" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0" vertical-offset="93" max-vertical-offset="561">
               <folding />
             </state>
           </provider>
@@ -389,7 +398,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="enquete" />
+              <option name="myItemId" value="degredexposition" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -664,11 +673,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gestionR/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="0" selection-start="5797" selection-end="5797" vertical-scroll-proportion="0.0" vertical-offset="2278" max-vertical-offset="6120" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gestionR/manager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="21" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="527" />
@@ -677,11 +681,6 @@
     <entry file="file://$PROJECT_DIR$/geoDjango/templates/risque/list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="93" selection-start="2466" selection-end="2523" vertical-scroll-proportion="-9.730769" vertical-offset="716" max-vertical-offset="1462" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/masterpage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="4" selection-start="8708" selection-end="8797" vertical-scroll-proportion="-9.653846" vertical-offset="2520" max-vertical-offset="10591" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gestionR/templatetags/suivitag.py">
@@ -755,13 +754,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/geoDjango/templates/degredexposition/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geoDjango/templates/masterpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="4" selection-start="428" selection-end="494" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="10591">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/geoDjango/templates/risque/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="301" column="0" selection-start="9761" selection-end="9761" vertical-scroll-proportion="0.4862805" vertical-offset="4798" max-vertical-offset="6698">
+        <state line="6" column="61" selection-start="229" selection-end="229" vertical-scroll-proportion="-1.9954268" vertical-offset="1411" max-vertical-offset="6800">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

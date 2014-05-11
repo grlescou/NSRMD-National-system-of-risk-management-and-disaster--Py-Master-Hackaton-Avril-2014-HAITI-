@@ -1,0 +1,23 @@
+*{
+	
+	margin:0;
+	padding:0;
+}
+
+body,html{
+	height:100%;
+	min-height:100%;
+}
+
+
+
+#menu {
+	display:inline-block;
+	width:100%;
+	background:rgba(0,0,0,0.5);
+	color: white ;
+	position:fixed;
+	z-index:2;
+	height:82px;		
+	
+}
