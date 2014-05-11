@@ -156,13 +156,13 @@
             function init(){
                map = new OpenLayers.Map('map',optionsMap);
 
-                //var lonLat = new OpenLayers.LonLat(-72.179833000000000, 19.120622000000000);
-                var lonLat = new OpenLayers.LonLat(-8034716.50587 , 2135662.94252);
+                var lonLat = new OpenLayers.LonLat(-72.179833000000000, 19.120622000000000);
+               // var lonLat = new OpenLayers.LonLat(-8034716.50587 , 2135662.94252);
 
                 var zoom = 9;
-          //      lonLat.transform(
-         //   new OpenLayers.Projection("EPSG:4326"), options.projection
-       // );
+                lonLat.transform(
+            new OpenLayers.Projection("EPSG:4326"), options.projection
+        );
 
 
                 var OSM = new OpenLayers.Layer.OSM("OpenStreetMap");
