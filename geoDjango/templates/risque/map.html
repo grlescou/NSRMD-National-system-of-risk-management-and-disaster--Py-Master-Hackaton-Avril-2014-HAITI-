@@ -600,7 +600,7 @@
                map = new OpenLayers.Map('map',optionsMap);
 
                 var lonLat = new OpenLayers.LonLat(-72.179833000000000, 19.120622000000000);
-               
+
 
                 var zoom = 9;
                 lonLat.transform(
@@ -840,18 +840,17 @@ var style = new OpenLayers.Style();
     </div><!-- /.modal -->
 
     <div  id="menu" >
-        <form class="form-inline" action="/fabriquant/All" name="seachform">
+        <form class="form-inline" action="/" name="seachform">
                             <select class="chosen" data-placeholder="Rechercher un fabriquant..." style="width: 250px"
                                 name="search"    onchange="document.getElementsByName('seachform')[0].submit();">
-                                    <option></option>
-                                {% for fabriquant in allfabriquants %}
-                                    <option value="{{ fabriquant.id }}">{{ fabriquant.lastname }} {{ fabriquant.firstname }}</option>
-                                {% endfor %}
+                                    <option value="tous">Tous</option>
+                                     <option value="#1">Priorite #1</option>
+                                     <option value="#2">Priorite #2</option>
+                                     <option value="#3">Priorite #3</option>
+                                     <option value="#4">Priorite #4</option>
+
                             </select>
                         </form>
-
-
-
 
     </div>
     <div id="map">
