@@ -82,11 +82,32 @@
 .scrolling{
     overflow: auto;
 }
+
 .green-black{
     width: 15px;
     height: 5px;
-    background: green;
+    background: #00FF00;
 }
+
+.green-light{
+    width: 15px;
+    height: 5px;
+    background: #00FF99;
+}
+
+.yellow{
+    width: 15px;
+    height: 5px;
+    background: #CCFF66;
+}
+
+.red{
+    width: 15px;
+    height: 5px;
+    background: #FF0000;
+}
+
+
 </style>
 
 
@@ -205,7 +226,7 @@ var style = new OpenLayers.Style();
                      property: "niveau",
                       value: "Faible"
                   }),
-                  symbolizer: {pointRadius: 10, fillColor: "green",
+                  symbolizer: {pointRadius: 10, fillColor: #00FF00,
                                fillOpacity: 0.5, strokeColor: "black"
                   }
                 });
@@ -216,7 +237,7 @@ var style = new OpenLayers.Style();
                      property: "niveau",
                       value: "Modéré"
                   }),
-                  symbolizer: {pointRadius: 10, fillColor: "yellow",
+                  symbolizer: {pointRadius: 10, fillColor: #CCFF66,
                                fillOpacity: 0.5, strokeColor: "black"
                   }
                 });
@@ -227,8 +248,8 @@ var style = new OpenLayers.Style();
                       property: "niveau",
                       value: "Fort"
                   }),
-                  symbolizer: {pointRadius: 20, fillColor: "pink",
-                               fillOpacity: 0.7, strokeColor: "black"
+                  symbolizer: {pointRadius: 10, fillColor: #FF0000,
+                               fillOpacity: 0.5, strokeColor: "black"
                   }
                 });
 
@@ -336,15 +357,15 @@ var style = new OpenLayers.Style();
           </div>
           <div class="modal-body scrolling">
               <ul>
-                  <li><span class="green-black">&nbsp;&nbsp;&nbsp;&nbsp;</span>&emsp;Legende 1</li>
-                  <li><span class="green-black">&nbsp;&nbsp;&nbsp;&nbsp;</span>&emsp;Legende 1</li>
-                  <li><span class="green-black">&nbsp;&nbsp;&nbsp;&nbsp;</span>&emsp;Legende 1</li>
-                  <li><span class="green-black">&nbsp;&nbsp;&nbsp;&nbsp;</span>&emsp;Legende 1</li>
-                  <li><span class="green-black">&nbsp;&nbsp;&nbsp;&nbsp;</span>&emsp;Legende 1</li>
-                  <li><span class="green-black">&nbsp;&nbsp;&nbsp;&nbsp;</span>&emsp;Legende 1</li>
+                  <li><span class="green-black">&nbsp;&nbsp;&nbsp;&nbsp;</span>&emsp;Faible</li>
+                  <!--<li><span class="green-light">&nbsp;&nbsp;&nbsp;&nbsp;</span>&emsp;#3</li>-->
+                  <li><span class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;</span>&emsp;Modéré</li>
+                  <li><span class="red">&nbsp;&nbsp;&nbsp;&nbsp;</span>&emsp;Fort</li>
+                 <!-- <li><span class="green-black">&nbsp;&nbsp;&nbsp;&nbsp;</span>&emsp;Legende 1</li>
+                  <li><span class="green-black">&nbsp;&nbsp;&nbsp;&nbsp;</span>&emsp;Legende 1</li>-->
               </ul>
           </div>
-          <div class="modal-header">
+         <!-- <div class="modal-header">
             <h4 class="modal-title">Option</h4>
           </div>
           <div class="modal-body scrolling">
@@ -357,7 +378,7 @@ var style = new OpenLayers.Style();
                   <li>Option 1</li>
                   <li>Option 2</li>
               </ul>
-          </div>
+          </div> -->
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
