@@ -44,7 +44,7 @@
       <file leaf-file-name="nextform.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/nextform.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="32" selection-start="3919" selection-end="3919" vertical-scroll-proportion="0.0" vertical-offset="1955" max-vertical-offset="2482">
+            <state line="118" column="32" selection-start="4019" selection-end="4019" vertical-scroll-proportion="0.0" vertical-offset="2006" max-vertical-offset="3026">
               <folding />
             </state>
           </provider>
@@ -53,7 +53,7 @@
       <file leaf-file-name="map.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/geoDjango/templates/risque/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="278" column="7" selection-start="8869" selection-end="8869" vertical-scroll-proportion="0.040572792" vertical-offset="4709" max-vertical-offset="5542">
+            <state line="181" column="60" selection-start="6254" selection-end="6254" vertical-scroll-proportion="0.7347561" vertical-offset="2595" max-vertical-offset="6341">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -93,7 +93,7 @@
       <file leaf-file-name="list.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="27" selection-start="1085" selection-end="1085" vertical-scroll-proportion="-0.65384614" vertical-offset="476" max-vertical-offset="1139">
+            <state line="29" column="27" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1139">
               <folding />
             </state>
           </provider>
@@ -118,37 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/gestionR/models" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/editcommune.html" />
-        <option value="$PROJECT_DIR$/android_root/forms.py" />
-        <option value="$PROJECT_DIR$/android_root/urls.py" />
-        <option value="$PROJECT_DIR$/android_root/views.py" />
-        <option value="$PROJECT_DIR$/geoDjango/settings.py" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/static/css/style.css" />
-        <option value="$PROJECT_DIR$/gestionR/Data.py" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/static/css/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/static/jscript/perceptionform.js" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/enquete/communes.html" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/enquete/sections.html" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/enquete/presenceinstitutionellelist.html" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/viewmapCom.html" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/index.html" />
-        <option value="$PROJECT_DIR$/gestionR/admin.py" />
-        <option value="$PROJECT_DIR$/users/views.py" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/viewmap.html" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/enquete/map.html" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/vulnerabilite/map.html" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/degredexposition/map.html" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/vulnerabilite/list.html" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/enquete/form.html" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/static/jscript/morris/chart-data-morris.js" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/static/jscript/jquery-chosen.js" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/masterpage.html" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/degredexposition/list.html" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/enquete/presenceinstitutionelle.html" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/enquete/plan.html" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/enquete/materiels.html" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/enquete/equipements.html" />
         <option value="$PROJECT_DIR$/geoDjango/templates/enquete/communications.html" />
         <option value="$PROJECT_DIR$/geoDjango/templates/enquete/transports.html" />
         <option value="$PROJECT_DIR$/gestionR/forms.py" />
@@ -168,11 +137,16 @@
       </list>
     </option>
   </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="geoDjango/invalid/Django" />
+    </ignored-facets>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -424,10 +398,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -447,27 +421,7 @@
       <recent name="C:\Users\Suy\geoDjango\geoDjango\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Django server.geoDjango">
-    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="geoDjango" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method />
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="tests" factoryName="py.test">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -532,29 +486,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="geoDjango" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -576,9 +507,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -647,9 +575,7 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Django server.geoDjango" />
-    </list>
+    <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
@@ -678,27 +604,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17295597" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17522658" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17501585" sideWeight="0.9736477" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17752443" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1769437" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -716,9 +642,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2907855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37155962" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -738,267 +664,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gestionR/Data3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="24" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/static/jscript/perceptionform.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="45" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/sections.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="48" selection-start="2443" selection-end="2443" vertical-scroll-proportion="-9.230769" vertical-offset="576" max-vertical-offset="1224" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/static/css/animate-custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="21" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="67184" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="28" selection-start="2747" selection-end="2747" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/viewmapCom.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="36" selection-start="4656" selection-end="4656" vertical-scroll-proportion="-73.23077" vertical-offset="272" max-vertical-offset="3128" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="31" selection-start="537" selection-end="537" vertical-scroll-proportion="0.46363637" vertical-offset="102" max-vertical-offset="850" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="917" selection-end="917" vertical-scroll-proportion="0.76609445" vertical-offset="0" max-vertical-offset="466" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="15" selection-start="2257" selection-end="2257" vertical-scroll-proportion="0.0" vertical-offset="1089" max-vertical-offset="1887">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="26" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestionR/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="35" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/viewmap.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="52" selection-start="5060" selection-end="5082" vertical-scroll-proportion="-1.4230769" vertical-offset="2190" max-vertical-offset="3128" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/vulnerabilite/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="54" selection-start="5120" selection-end="5120" vertical-scroll-proportion="-7.1923075" vertical-offset="2074" max-vertical-offset="3213" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/degredexposition/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="34" selection-start="5065" selection-end="5065" vertical-scroll-proportion="-3.0" vertical-offset="2166" max-vertical-offset="3213" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/vulnerabilite/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="27" selection-start="605" selection-end="605" vertical-scroll-proportion="-1.3076923" vertical-offset="272" max-vertical-offset="1054" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/static/jscript/jquery-1.7.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/static/jscript/morris/chart-data-morris.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1682" selection-end="1682" vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="969" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/static/jscript/jquery-chosen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="826" column="49" selection-start="35458" selection-end="35458" vertical-scroll-proportion="0.0" vertical-offset="13957" max-vertical-offset="17306" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/nextform22.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="25" selection-start="561" selection-end="561" vertical-scroll-proportion="-3.9230769" vertical-offset="170" max-vertical-offset="2499">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="44" selection-start="3397" selection-end="3397" vertical-scroll-proportion="-9.346154" vertical-offset="1151" max-vertical-offset="3128" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/degredexposition/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="27" selection-start="989" selection-end="989" vertical-scroll-proportion="-9.153846" vertical-offset="170" max-vertical-offset="1037" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/presenceinstitutionellelist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="229" column="10" selection-start="86" selection-end="14260" vertical-scroll-proportion="-13.269231" vertical-offset="1559" max-vertical-offset="2091">
-          <folding>
-            <element signature="e#8441#8895#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/materiels.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="50" selection-start="467" selection-end="467" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="5746">
-          <folding>
-            <element signature="e#1331#1390#0" expanded="false" />
-            <element signature="e#1442#1624#0" expanded="false" />
-            <element signature="e#1670#1807#0" expanded="false" />
-            <element signature="e#1825#2014#0" expanded="false" />
-            <element signature="e#2089#2126#0" expanded="false" />
-            <element signature="e#2171#2441#0" expanded="false" />
-            <element signature="e#2487#2624#0" expanded="false" />
-            <element signature="e#2642#2831#0" expanded="false" />
-            <element signature="e#2927#3371#0" expanded="false" />
-            <element signature="e#3417#3554#0" expanded="false" />
-            <element signature="e#3572#3761#0" expanded="false" />
-            <element signature="e#3861#4305#0" expanded="false" />
-            <element signature="e#4338#4454#0" expanded="false" />
-            <element signature="e#4538#4727#0" expanded="false" />
-            <element signature="e#4827#5270#0" expanded="false" />
-            <element signature="e#5303#5419#0" expanded="false" />
-            <element signature="e#5503#5692#0" expanded="false" />
-            <element signature="e#5761#5799#0" expanded="false" />
-            <element signature="e#5840#6285#0" expanded="false" />
-            <element signature="e#6331#6468#0" expanded="false" />
-            <element signature="e#6486#6675#0" expanded="false" />
-            <element signature="e#6760#7205#0" expanded="false" />
-            <element signature="e#7251#7388#0" expanded="false" />
-            <element signature="e#7406#7595#0" expanded="false" />
-            <element signature="e#7696#8140#0" expanded="false" />
-            <element signature="e#8186#8323#0" expanded="false" />
-            <element signature="e#8341#8530#0" expanded="false" />
-            <element signature="e#8650#8688#0" expanded="false" />
-            <element signature="e#8734#9005#0" expanded="false" />
-            <element signature="e#9042#9158#0" expanded="false" />
-            <element signature="e#9236#9451#0" expanded="false" />
-            <element signature="e#9544#9989#0" expanded="false" />
-            <element signature="e#10026#10142#0" expanded="false" />
-            <element signature="e#10220#10435#0" expanded="false" />
-            <element signature="e#10666#11111#0" expanded="false" />
-            <element signature="e#11148#11264#0" expanded="false" />
-            <element signature="e#11342#11557#0" expanded="false" />
-            <element signature="e#11803#12247#0" expanded="false" />
-            <element signature="e#12284#12400#0" expanded="false" />
-            <element signature="e#12478#12693#0" expanded="false" />
-            <element signature="e#12932#13377#0" expanded="false" />
-            <element signature="e#13414#13530#0" expanded="false" />
-            <element signature="e#13608#13823#0" expanded="false" />
-            <element signature="e#13934#14378#0" expanded="false" />
-            <element signature="e#14415#14531#0" expanded="false" />
-            <element signature="e#14609#14824#0" expanded="false" />
-            <element signature="e#14924#14983#0" expanded="false" />
-            <element signature="e#15025#15296#0" expanded="false" />
-            <element signature="e#15342#15787#0" expanded="false" />
-            <element signature="e#15834#16279#0" expanded="false" />
-            <element signature="e#16325#16769#0" expanded="false" />
-            <element signature="e#16815#17260#0" expanded="false" />
-            <element signature="e#17293#17409#0" expanded="false" />
-            <element signature="e#17493#17682#0" expanded="false" />
-            <element signature="e#17769#18213#0" expanded="false" />
-            <element signature="e#18246#18362#0" expanded="false" />
-            <element signature="e#18446#18635#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/communications.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="54" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="4471">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/transports.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="45" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="4471">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestionR/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="26" selection-start="6548" selection-end="6548" vertical-scroll-proportion="0.0" vertical-offset="2415" max-vertical-offset="3077" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/ressources.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="26" selection-start="1275" selection-end="1275" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="4471">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/plan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="235" column="17" selection-start="13101" selection-end="13101" vertical-scroll-proportion="0.0" vertical-offset="3627" max-vertical-offset="6018">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/equipements.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="30" selection-start="637" selection-end="637" vertical-scroll-proportion="-3.2692308" vertical-offset="187" max-vertical-offset="2329">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/intervention.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="0" selection-start="7663" selection-end="7663" vertical-scroll-proportion="-6.730769" vertical-offset="1185" max-vertical-offset="2533">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/evaluations.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="273" column="12" selection-start="16000" selection-end="16000" vertical-scroll-proportion="-3.8846154" vertical-offset="4540" max-vertical-offset="4879">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestionR/Data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="6" selection-start="1199" selection-end="1209" vertical-scroll-proportion="0.9315069" vertical-offset="136" max-vertical-offset="629" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/presenceinstitutionelle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="270" column="16" selection-start="1241" selection-end="16314" vertical-scroll-proportion="-12.576923" vertical-offset="2172" max-vertical-offset="2737">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestionR/templatetags/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="400" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gestionR/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="151" column="0" selection-start="5797" selection-end="5797" vertical-scroll-proportion="0.0" vertical-offset="2278" max-vertical-offset="6120" />
@@ -1016,9 +681,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/geoDjango/templates/masterpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="4" selection-start="8708" selection-end="8797" vertical-scroll-proportion="-9.653846" vertical-offset="2520" max-vertical-offset="10591">
-          <folding />
-        </state>
+        <state line="163" column="4" selection-start="8708" selection-end="8797" vertical-scroll-proportion="-9.653846" vertical-offset="2520" max-vertical-offset="10591" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gestionR/templatetags/suivitag.py">
@@ -1044,7 +707,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/nextform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="32" selection-start="3919" selection-end="3919" vertical-scroll-proportion="0.0" vertical-offset="1955" max-vertical-offset="2482">
+        <state line="118" column="32" selection-start="4019" selection-end="4019" vertical-scroll-proportion="0.0" vertical-offset="2006" max-vertical-offset="3026">
           <folding />
         </state>
       </provider>
@@ -1087,14 +750,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="27" selection-start="1085" selection-end="1085" vertical-scroll-proportion="-0.65384614" vertical-offset="476" max-vertical-offset="1139">
+        <state line="29" column="27" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1139">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/geoDjango/templates/risque/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="278" column="7" selection-start="8869" selection-end="8869" vertical-scroll-proportion="0.040572792" vertical-offset="4709" max-vertical-offset="5542">
+        <state line="181" column="60" selection-start="6254" selection-end="6254" vertical-scroll-proportion="0.7347561" vertical-offset="2595" max-vertical-offset="6341">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
