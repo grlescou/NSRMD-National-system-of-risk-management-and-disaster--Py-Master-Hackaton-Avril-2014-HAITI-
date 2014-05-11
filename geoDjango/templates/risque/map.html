@@ -319,7 +319,11 @@ var style = new OpenLayers.Style();
                     //-------------------------------------------------------------------
 
                 map.addLayers([OSM, gsat,gsat, gphy, gmap, ghyb,layer,  layerbase]);
-                map.addControl(new OpenLayers.Control.MousePosition());
+               // map.addControl(new OpenLayers.Control.MousePosition());
+  map.events.register("mousemove", map, function (e) {
+    var position = e.map.getLonLatFromViewPortPx(e.xy);
+    OpenLayers.Util.getElement("tooltip").innerHTML = "<label>Latitude: " + position.lat + "</label><br/><label>Longitude: " + position.lon + "</label>";
+    });
                 map.zoomToExtent(new OpenLayers.Bounds(
                     -3.92, 44.34, 4.87, 49.55
                 ));
