@@ -32,8 +32,8 @@
 
            <link rel="stylesheet" href="{% static 'jscript/OpenLayers-2.13.1/theme/default/style.css' %}" type="text/css">
             <script src="http://maps.google.com/maps/api/js?v=3&amp;sensor=false"></script>
-                <link rel="stylesheet" href="{% static 'jscript/OpenLayers-2.13.1/theme/default/style.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static 'jscript/OpenLayers-2.13.1/theme/default/google.css' %}" type="text/css">
+               <!-- <link rel="stylesheet" href="{% static 'jscript/OpenLayers-2.13.1/theme/default/style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'jscript/OpenLayers-2.13.1/theme/default/google.css' %}" type="text/css"> -->
 
     <!---           ---------------------------------------      -->
 
@@ -58,15 +58,15 @@
 .toggle-modal {
 	position: absolute;
 	margin: 0 auto;
-	z-index: 2500;
+	z-index: 9999;
 	bottom: 20px;
 	right: 0;
 	left: 0;
 }
  .beatydialog {
     background: #222222;
-     width: 350px;
-     height: 3000px;
+     width: 300px;
+     height: 200px;
      color: #ffffff;
 	filter: alpha(opacity=40);
 	-moz-opacity: 0.4;
@@ -78,7 +78,8 @@
 }
 .modal-dialog-left{
     margin-left: 10px;
-    margin-top: 80px;
+    margin-top: 80%;
+
 }
 .scrolling{
     overflow: auto;
@@ -386,9 +387,8 @@ var style = new OpenLayers.Style();
 
     <div  id="menu" >
 
-
     </div>
-    <div id="map" style="height: 700px;z-index: 10000">
+    <div id="map">
 
     </div>
 </body>

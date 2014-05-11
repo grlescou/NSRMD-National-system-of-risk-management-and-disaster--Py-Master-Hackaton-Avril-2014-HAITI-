@@ -14,10 +14,22 @@ body,html{
 #menu {
 	display:inline-block;
 	width:100%;
-	background:rgba(0,0,0,0.5);
+	background:rgba(0,0,0,0.6);
 	color: white ;
 	position:fixed;
+	top:0;
+	left:0;
 	z-index:2000;
 	height:82px;		
+	
+}
+
+#map {
+position:fixed;
+height:90%;
+width: 100%;
+top:82px;
+left:0;
+z-index: 1000;
 	
 }

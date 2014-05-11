@@ -50,15 +50,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/geoDjango/templates/risque/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="13" selection-start="3038" selection-end="3038" vertical-scroll-proportion="0.44207317" vertical-offset="764" max-vertical-offset="6800">
+            <state line="80" column="19" selection-start="3335" selection-end="3335" vertical-scroll-proportion="-17.307692" vertical-offset="910" max-vertical-offset="6800">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/geoDjango/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="154" column="0" selection-start="3199" selection-end="3766" vertical-scroll-proportion="0.8477612" vertical-offset="2050" max-vertical-offset="2720">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,15 +93,6 @@
         <entry file="file://$PROJECT_DIR$/geoDjango/templates/static/jscript/GeoExt/examples/popup.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="61" column="0" selection-start="1699" selection-end="1699" vertical-scroll-proportion="0.0" vertical-offset="614" max-vertical-offset="1581">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/geoDjango/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="61" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="629">
               <folding />
             </state>
           </provider>
@@ -127,7 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/geoDjango/templates/enquete/communications.html" />
         <option value="$PROJECT_DIR$/geoDjango/templates/enquete/transports.html" />
         <option value="$PROJECT_DIR$/gestionR/forms.py" />
         <option value="$PROJECT_DIR$/geoDjango/templates/enquete/ressources.html" />
@@ -143,6 +141,7 @@
         <option value="$PROJECT_DIR$/gestionR/views.py" />
         <option value="$PROJECT_DIR$/geoDjango/templates/static/css/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/geoDjango/templates/risque/map.html" />
+        <option value="$PROJECT_DIR$/geoDjango/settings.py" />
       </list>
     </option>
   </component>
@@ -407,11 +406,15 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -673,11 +676,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gestionR/manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="21" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="527" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/geoDjango/templates/risque/list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="93" selection-start="2466" selection-end="2523" vertical-scroll-proportion="-9.730769" vertical-offset="716" max-vertical-offset="1462" />
@@ -770,12 +768,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/geoDjango/templates/risque/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="13" selection-start="3038" selection-end="3038" vertical-scroll-proportion="0.44207317" vertical-offset="764" max-vertical-offset="6800">
+        <state line="80" column="19" selection-start="3335" selection-end="3335" vertical-scroll-proportion="-17.307692" vertical-offset="910" max-vertical-offset="6800">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geoDjango/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="154" column="0" selection-start="3199" selection-end="3766" vertical-scroll-proportion="0.8477612" vertical-offset="2050" max-vertical-offset="2720">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -62,20 +62,42 @@ TEMPLATE_DIRS = (
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.contrib.gis.db.backends.postgis',
+#         'NAME': 'PostGIS',  # Name of your spatial database
+#         'USER': 'postgres',   # Database user
+#         'PASSWORD': 'password',# Database password
+#         'HOST': '127.0.0.1',
+#         'PORT': '5432',
+#     }
+# }
+#
+#
+# GEOS_LIBRARY_PATH = '/app/.geodjango/geos/lib/libgeos_c.so'
+#
+# GDAL_LIBRARY_PATH = '/app/.geodjango/gdal/lib/libgdal.so'
+
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'PostGIS',  # Name of your spatial database
-        'USER': 'postgres',   # Database user
-        'PASSWORD': 'password',# Database password
-        'HOST': '127.0.0.1',
+        'NAME': 'grl_geodjango',
+        'USER': 'grl',
+        'PASSWORD': '!!GAROLE!!90$$',
         'PORT': '5432',
+        'HOST': 'postgresql1.alwaysdata.com',
     }
- }
+}
 
 
+#GDAL_LIBRARY_PATH = 'C:/lastgeodjango/gdal/gdal110.dll'
+#GEOS_LIBRARY_PATH = 'C:/lastgeodjango/geos/bin/geos_c.dll'
+
+##Heroku setting for dll
 GEOS_LIBRARY_PATH = '/app/.geodjango/geos/lib/libgeos_c.so'
-
+#
 GDAL_LIBRARY_PATH = '/app/.geodjango/gdal/lib/libgdal.so'
 
 
