@@ -188,6 +188,21 @@
 
 
 //-----------------------------------------------------------
+var stylemapbase = new OpenLayers.Style();
+
+                   var rulenullbase = new OpenLayers.Rule({
+                  filter: new OpenLayers.Filter.Comparison({
+                      type: OpenLayers.Filter.Comparison.EQUAL_TO,
+                     property: "id_0",
+                      value: '99'
+                  }),
+                  symbolizer: {pointRadius: 10, fillColor: "#bdc3c7",
+{#                               fillOpacity: 0.5, strokeColor: "black"#}
+                  }
+                });
+                stylemapbase.addRules([rulenullbase]);
+
+
 
 //-----------------------------------------------------------
 
