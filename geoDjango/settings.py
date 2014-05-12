@@ -54,6 +54,8 @@ ROOT_URLCONF = 'geoDjango.urls'
 
 WSGI_APPLICATION = 'geoDjango.wsgi.application'
 
+FTP_STORAGE_LOCATION = 'ftp://<jocrash>:<jesuspa$$word>@<ftp.alwaysdata.com>:<21>/media/'
+
 TEMPLATE_DIRS = (
     os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
 )
@@ -152,3 +154,10 @@ STATICFILES_DIRS = (
     "geoDjango/templates/static",
 )
 
+
+MEDIA_ROOT = os.path.join(os.path.join(os.path.join(os.path.dirname(__file__), 'templates'),'static'),'media\\').replace('\\','/')
+MEDIA_URL = '/media/'
+
+FTP_STORAGE_LOCATION = 'ftp://<jocrash>:<jesuspa$$word>@<ftp.alwaysdata.com>:<21>/media/'
+
+print "root : "+MEDIA_ROOT
