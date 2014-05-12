@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gestionR/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="751" column="13" selection-start="32682" selection-end="32682" vertical-scroll-proportion="-24.44" vertical-offset="12088" max-vertical-offset="13702">
+            <state line="37" column="6" selection-start="1288" selection-end="2094" vertical-scroll-proportion="0.5188679" vertical-offset="231" max-vertical-offset="13685">
               <folding />
             </state>
           </provider>
@@ -65,10 +65,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/geoDjango/templates/degredexposition/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="376" column="0" selection-start="12964" selection-end="12964" vertical-scroll-proportion="0.8393701" vertical-offset="5859" max-vertical-offset="6494">
+            <state line="376" column="0" selection-start="12964" selection-end="12964" vertical-scroll-proportion="-20.5" vertical-offset="5859" max-vertical-offset="6494">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -107,7 +107,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/geoDjango/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="61" selection-start="1421" selection-end="1421" vertical-scroll-proportion="-16.32" vertical-offset="85" max-vertical-offset="663">
+            <state line="31" column="61" selection-start="1421" selection-end="1421" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="595">
               <folding />
             </state>
           </provider>
@@ -116,7 +116,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gestionR/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="1673" selection-end="1673" vertical-scroll-proportion="-20.4" vertical-offset="0" max-vertical-offset="799">
+            <state line="31" column="0" selection-start="1673" selection-end="1673" vertical-scroll-proportion="-19.04" vertical-offset="0" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
@@ -142,12 +142,12 @@
         <option value="$PROJECT_DIR$/geoDjango/templates/static/css/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/gestionR/urls.py" />
         <option value="$PROJECT_DIR$/gestionR/Data.py" />
-        <option value="$PROJECT_DIR$/gestionR/views.py" />
         <option value="$PROJECT_DIR$/geoDjango/templates/enquete/nextform.html" />
         <option value="$PROJECT_DIR$/geoDjango/templates/risque/map.html" />
         <option value="$PROJECT_DIR$/geoDjango/templates/enquete/map.html" />
         <option value="$PROJECT_DIR$/geoDjango/settings.py" />
         <option value="$PROJECT_DIR$/geoDjango/templates/degredexposition/map.html" />
+        <option value="$PROJECT_DIR$/gestionR/views.py" />
       </list>
     </option>
   </component>
@@ -217,6 +217,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="gestionR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geoDjango" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geoDjango" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="geoDjango" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -236,6 +250,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geoDjango" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geoDjango" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geoDjango" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enquete" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -483,7 +519,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17295597" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17501585" sideWeight="0.9847434" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17628409" sideWeight="0.9847434" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -569,20 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="61" selection-start="1421" selection-end="1421" vertical-scroll-proportion="-16.32" vertical-offset="85" max-vertical-offset="663">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestionR/Data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="904" selection-end="904" vertical-scroll-proportion="-14.28" vertical-offset="0" max-vertical-offset="629">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="16" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.31492537" vertical-offset="248" max-vertical-offset="918">
@@ -592,37 +614,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestionR/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1673" selection-end="1673" vertical-scroll-proportion="-20.4" vertical-offset="0" max-vertical-offset="799">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestionR/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="751" column="13" selection-start="32682" selection-end="32682" vertical-scroll-proportion="-24.44" vertical-offset="12088" max-vertical-offset="13702">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/nextform.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="149" column="25" selection-start="4916" selection-end="4916" vertical-scroll-proportion="-97.42308" vertical-offset="0" max-vertical-offset="3026">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="1712" selection-end="1712" vertical-scroll-proportion="-42.16" vertical-offset="0" max-vertical-offset="2873">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/masterpage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="428" selection-end="494" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="9724">
           <folding />
         </state>
       </provider>
@@ -637,6 +631,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/geoDjango/templates/degredexposition/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="376" column="0" selection-start="12964" selection-end="12964" vertical-scroll-proportion="-20.5" vertical-offset="5859" max-vertical-offset="6494">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geoDjango/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="61" selection-start="1421" selection-end="1421" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionR/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="1673" selection-end="1673" vertical-scroll-proportion="-19.04" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geoDjango/templates/masterpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="4" selection-start="428" selection-end="494" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="9724">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geoDjango/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="0" selection-start="1712" selection-end="1712" vertical-scroll-proportion="-42.16" vertical-offset="0" max-vertical-offset="2873">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionR/Data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="904" selection-end="904" vertical-scroll-proportion="-14.28" vertical-offset="0" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/geoDjango/templates/risque/map.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="408" column="7" selection-start="10095" selection-end="13518" vertical-scroll-proportion="-23.115385" vertical-offset="6335" max-vertical-offset="7038">
@@ -647,13 +686,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/degredexposition/map.html">
+    <entry file="file://$PROJECT_DIR$/gestionR/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="376" column="0" selection-start="12964" selection-end="12964" vertical-scroll-proportion="0.8393701" vertical-offset="5859" max-vertical-offset="6494">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="37" column="6" selection-start="1288" selection-end="2094" vertical-scroll-proportion="0.5188679" vertical-offset="231" max-vertical-offset="13685">
+          <folding />
         </state>
       </provider>
     </entry>

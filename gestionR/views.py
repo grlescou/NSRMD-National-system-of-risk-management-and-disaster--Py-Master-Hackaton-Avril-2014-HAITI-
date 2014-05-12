@@ -6,7 +6,7 @@ from django.http import HttpResponse
 from django.template.loader import get_template
 from django.template import Context
 #from esih_hackathon.models import  User,  Formulaire
-from docx2html import convert
+#from docx2html import convert
 from django.template import RequestContext
 from django.shortcuts import render_to_response, redirect
 from gestionR.forms import *
@@ -17,8 +17,7 @@ from django.contrib.auth.admin import Group
 # from gestionR.forms import CommuneForm
 # from gestionR.models import *
 from gestionR.manager import DataManager
-from gestionR.models import HtiAdm0, HtiAdm1, HtiAdm2, HtiAdm3, Vulnerabilite, Enquete, DegreDexposition, Risque, \
-    Perception
+from gestionR.models import HtiAdm0, HtiAdm1, HtiAdm2, HtiAdm3, Vulnerabilite, Enquete, DegreDexposition, Risque, Perception
 from vectorformats.Formats import Django, GeoJSON
 """ Home page """
 def index(request):
@@ -36,23 +35,23 @@ def index(request):
 def enquetes(request):
     if not 'userid' in request.session:
         return redirect("/")
-    formfile = FormFileWord()
-    if 'u' in request.GET:
-        if request.GET['u']=='1':
-            formfile = FormFileWord(request.POST,request.FILES)
-            print request.FILES['file']
-            if formfile.is_valid():
-                if 'file' in request.FILES:
-                    instance = formfile.save(commit=False)
-                    instance.save()
-                    link = 'C:\\Users\\Suy\geoDjango\\geoDjango\\templates\\static'.replace('\\','/')
-                    link = link +str(instance.filelink())
-                    print link
-                    print convert(link)
-
-                return HttpResponse(convert(request.FILES['file']))
-                # if 'file' in request.FILES:
-                #     instance.file = request.FILES['file']
+    # formfile = FormFileWord()
+    # if 'u' in request.GET:
+    #     if request.GET['u']=='1':
+    #         formfile = FormFileWord(request.POST,request.FILES)
+    #         print request.FILES['file']
+    #         if formfile.is_valid():
+    #             if 'file' in request.FILES:
+    #                 instance = formfile.save(commit=False)
+    #                 instance.save()
+    #                 link = 'C:\\Users\\Suy\geoDjango\\geoDjango\\templates\\static'.replace('\\','/')
+    #                 link = link +str(instance.filelink())
+    #                 print link
+    #                 print convert(link)
+    #
+    #             return HttpResponse(convert(request.FILES['file']))
+    #             # if 'file' in request.FILES:
+    #             #     instance.file = request.FILES['file']
     enquetes = Enquete.objects.all()
     return render_to_response('enquete/list.html', locals(), context_instance=RequestContext(request))
 
