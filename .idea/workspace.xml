@@ -53,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="205" column="0" selection-start="6676" selection-end="6676" vertical-scroll-proportion="0.9464567" vertical-offset="2884" max-vertical-offset="6936">
+            <state line="262" column="0" selection-start="6772" selection-end="9249" vertical-scroll-proportion="-74.88461" vertical-offset="2507" max-vertical-offset="6936">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -65,10 +65,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="map.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/geoDjango/templates/degredexposition/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="205" column="0" selection-start="6676" selection-end="6676" vertical-scroll-proportion="-23.115385" vertical-offset="2884" max-vertical-offset="7004">
+            <state line="209" column="35" selection-start="6776" selection-end="6776" vertical-scroll-proportion="0.46456692" vertical-offset="3258" max-vertical-offset="7004">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -146,8 +146,8 @@
         <option value="$PROJECT_DIR$/geoDjango/settings.py" />
         <option value="$PROJECT_DIR$/gestionR/views.py" />
         <option value="$PROJECT_DIR$/geoDjango/templates/risque/map.html" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/degredexposition/map.html" />
         <option value="$PROJECT_DIR$/geoDjango/templates/enquete/map.html" />
+        <option value="$PROJECT_DIR$/geoDjango/templates/degredexposition/map.html" />
       </list>
     </option>
   </component>
@@ -673,9 +673,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/degredexposition/map.html">
+    <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="0" selection-start="6676" selection-end="6676" vertical-scroll-proportion="-23.115385" vertical-offset="2884" max-vertical-offset="7004">
+        <state line="262" column="0" selection-start="6772" selection-end="9249" vertical-scroll-proportion="-74.88461" vertical-offset="2507" max-vertical-offset="6936">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -683,9 +683,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/map.html">
+    <entry file="file://$PROJECT_DIR$/geoDjango/templates/degredexposition/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="0" selection-start="6676" selection-end="6676" vertical-scroll-proportion="0.9464567" vertical-offset="2884" max-vertical-offset="6936">
+        <state line="209" column="35" selection-start="6776" selection-end="6776" vertical-scroll-proportion="0.46456692" vertical-offset="3258" max-vertical-offset="7004">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
