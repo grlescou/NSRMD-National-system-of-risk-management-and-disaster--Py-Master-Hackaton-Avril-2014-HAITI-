@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gestionR/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="719" column="31" selection-start="31514" selection-end="31541" vertical-scroll-proportion="-24.72" vertical-offset="11537" max-vertical-offset="13617">
+            <state line="734" column="0" selection-start="32157" selection-end="32157" vertical-scroll-proportion="0.7062405" vertical-offset="11946" max-vertical-offset="13617">
               <folding />
             </state>
           </provider>
@@ -44,10 +44,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Data.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Data.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gestionR/Data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.6850746" vertical-offset="0" max-vertical-offset="714">
+            <state line="27" column="0" selection-start="1137" selection-end="1137" vertical-scroll-proportion="-18.36" vertical-offset="0" max-vertical-offset="714">
               <folding />
             </state>
           </provider>
@@ -138,10 +138,10 @@
         <option value="$PROJECT_DIR$/geoDjango/templates/enquete/list.html" />
         <option value="$PROJECT_DIR$/geoDjango/templates/static/css/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/geoDjango/settings.py" />
-        <option value="$PROJECT_DIR$/gestionR/views.py" />
         <option value="$PROJECT_DIR$/gestionR/urls.py" />
         <option value="$PROJECT_DIR$/geoDjango/templates/risque/map.html" />
         <option value="$PROJECT_DIR$/gestionR/Data.py" />
+        <option value="$PROJECT_DIR$/gestionR/views.py" />
       </list>
     </option>
   </component>
@@ -661,13 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestionR/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="719" column="31" selection-start="31514" selection-end="31541" vertical-scroll-proportion="-24.72" vertical-offset="11537" max-vertical-offset="13617">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/geoDjango/templates/risque/map.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="2617" selection-end="2617" vertical-scroll-proportion="-14.384615" vertical-offset="289" max-vertical-offset="7463">
@@ -680,7 +673,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gestionR/Data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.6850746" vertical-offset="0" max-vertical-offset="714">
+        <state line="27" column="0" selection-start="1137" selection-end="1137" vertical-scroll-proportion="-18.36" vertical-offset="0" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionR/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="734" column="0" selection-start="32157" selection-end="32157" vertical-scroll-proportion="0.7062405" vertical-offset="11946" max-vertical-offset="13617">
           <folding />
         </state>
       </provider>

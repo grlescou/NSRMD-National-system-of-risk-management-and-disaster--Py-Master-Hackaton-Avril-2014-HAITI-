@@ -680,21 +680,21 @@ def risques(request):
 
 
 def jsonrisques(request):
-    if 'filter' in request.GET:
-        if request.GET['filter']=='vulnerabilite':
-            sql = """SELECT * FROM public."hti_adm3" INNER JOIN  public."gestionR_vulnerabilite" ON public."hti_adm3".id=public."gestionR_vulnerabilite".local_id
+
+
+    sql = """SELECT * FROM public."hti_adm3" INNER JOIN  public."gestionR_vulnerabilite" ON public."hti_adm3".id=public."gestionR_vulnerabilite".local_id
         INNER JOIN public."gestionR_risque" ON public."gestionR_risque".id=public."gestionR_vulnerabilite".risquev_id;
             """
-        elif request.GET['filter']=='degreexposition':
-            sql = """SELECT * FROM public."hti_adm3" INNER JOIN  public."gestionR_degredexposition" ON public."hti_adm3".id=public."gestionR_degredexposition".local_id
-        INNER JOIN public."gestionR_risque" ON public."gestionR_risque".id=public."gestionR_degredexposition".risquev_id;"""
-    else:
-        sql = """SELECT * FROM public."hti_adm3" INNER JOIN  public."gestionR_vulnerabilite" ON public."hti_adm3".id=public."gestionR_vulnerabilite".local_id
-        INNER JOIN public."gestionR_risque" ON public."gestionR_risque".id=public."gestionR_vulnerabilite".risquev_id;
-
-
-
-            """
+    #     elif request.GET['filter']=='degreexposition':
+    #         sql = """SELECT * FROM public."hti_adm3" INNER JOIN  public."gestionR_degredexposition" ON public."hti_adm3".id=public."gestionR_degredexposition".local_id
+    #     INNER JOIN public."gestionR_risque" ON public."gestionR_risque".id=public."gestionR_degredexposition".risquev_id;"""
+    # else:
+    #     sql = """SELECT * FROM public."hti_adm3" INNER JOIN  public."gestionR_vulnerabilite" ON public."hti_adm3".id=public."gestionR_vulnerabilite".local_id
+    #     INNER JOIN public."gestionR_risque" ON public."gestionR_risque".id=public."gestionR_vulnerabilite".risquev_id;
+    #
+    #
+    #
+    #         """
 
     # AND public."gestionR_risque".id=public."gestionR_degredexposition".risqued_id;
     query = HtiAdm3.objects.raw(sql)
