@@ -37,450 +37,7 @@
     <link rel="stylesheet" href="{% static 'jscript/OpenLayers-2.13.1/theme/default/google.css' %}" type="text/css"> -->
 
     <!---           ---------------------------------------      -->
-    <style type="text/css">
-        /* chosen */
-
-        /* @group Base */
-        .chzn-container {
-          position: relative;
-          display: inline-block;
-          zoom: 1;
-          *display: inline;
-        }
-        .chzn-container .chzn-drop {
-          background: #fff;
-          border: 1px solid #aaa;
-          border-top: 0;
-          position: absolute;
-          top: 29px;
-          left: 0;
-          -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
-          -moz-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
-          z-index: 1010;
-        }
-        /* @end */
-        /* @group Single Chosen */
-        .chzn-container-single .chzn-single {
-          background-color: #efefef;
-          background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(50%, #eeeeee), to(#f4f4f4));
-          background-image: -webkit-linear-gradient(#ffffff, #eeeeee 50%, #f4f4f4);
-          background-image: -moz-linear-gradient(top, #ffffff, #eeeeee 50%, #f4f4f4);
-          background-image: -o-linear-gradient(#ffffff, #eeeeee 50%, #f4f4f4);
-          background-image: linear-gradient(#ffffff, #eeeeee 50%, #f4f4f4);
-          background-repeat: no-repeat;
-          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff4f4f4', GradientType=0);
-          -webkit-border-radius: 5px;
-          -moz-border-radius: 5px;
-          border-radius: 5px;
-          -webkit-background-clip: padding-box;
-          -moz-background-clip: padding-box;
-          background-clip: padding-box;
-          border: 1px solid #aaaaaa;
-          -webkit-box-shadow: 0 0 3px #ffffff inset, 0 1px 1px rgba(0,0,0,0.1);
-          -moz-box-shadow: 0 0 3px #ffffff inset, 0 1px 1px rgba(0,0,0,0.1);
-          box-shadow: 0 0 3px #ffffff inset, 0 1px 1px rgba(0,0,0,0.1);
-          display: block;
-          overflow: hidden;
-          white-space: nowrap;
-          position: relative;
-          height: 23px;
-          line-height: 24px;
-          padding: 0 0 0 8px;
-          color: #444444;
-          text-decoration: none;
-        }
-        .chzn-container-single .chzn-default {
-          color: #999;
-        }
-        .chzn-container-single .chzn-single span {
-          margin-right: 26px;
-          display: block;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-        }
-        .chzn-container-single .chzn-single abbr {
-          position: absolute;
-          top: 0;
-          right: 26px;
-        }
-        .chzn-container-single .chzn-single abbr:before {
-          content: '\00D7';
-          float: right;
-          font-size: 20px;
-          font-weight: bold;
-          line-height: 20px;
-          color: #000000;
-          text-shadow: 0 1px 0 #ffffff;
-          opacity: 0.2;
-          filter: alpha(opacity=20);
-        }
-        .chzn-container-single .chzn-single abbr:before:hover {
-          color: #000000;
-          text-decoration: none;
-          cursor: pointer;
-          opacity: 0.4;
-          filter: alpha(opacity=40);
-        }
-        .chzn-container-single .chzn-single abbr:hover,
-        .chzn-container-single.chzn-disabled .chzn-single abbr:hover {
-          text-decoration: none;
-          cursor: pointer;
-        }
-        .chzn-container-single .chzn-single abbr:hover:before,
-        .chzn-container-single.chzn-disabled .chzn-single abbr:hover:before {
-          color: #000000;
-          opacity: 0.4;
-          filter: alpha(opacity=40);
-        }
-        .chzn-container-single .chzn-single div {
-          position: absolute;
-          right: 0;
-          top: 0;
-          display: block;
-          height: 100%;
-          width: 18px;
-        }
-        .chzn-container-single .chzn-single div b {
-          display: block;
-          width: 100%;
-          height: 100%;
-        }
-        .chzn-container-single .chzn-single div b:after {
-          content: '\f078';
-          font-family: FontAwesome;
-        }
-        .chzn-container-single .chzn-search {
-          padding: 3px 4px;
-          position: relative;
-          margin: 0;
-          white-space: nowrap;
-          z-index: 1010;
-        }
-        .chzn-container-single .chzn-search:after {
-          content: '\f002';
-          font-family: FontAwesome;
-          position: relative;
-          right: 16px;
-        }
-        .chzn-container-single .chzn-search input {
-          background-color: #f5f5f5;
-          background-image: -moz-linear-gradient(top, #eeeeee, #ffffff);
-          background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), to(#ffffff));
-          background-image: -webkit-linear-gradient(top, #eeeeee, #ffffff);
-          background-image: -o-linear-gradient(top, #eeeeee, #ffffff);
-          background-image: linear-gradient(to bottom, #eeeeee, #ffffff);
-          background-repeat: repeat-x;
-          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffffffff', GradientType=0);
-          margin: 1px 0;
-          padding: 4px 20px 4px 5px;
-          outline: 0;
-          border: 1px solid #aaa;
-          font-family: sans-serif;
-          font-size: 1em;
-        }
-        .chzn-container-single .chzn-drop {
-          -webkit-border-radius: 0 0 4px 4px;
-          -moz-border-radius: 0 0 4px 4px;
-          border-radius: 0 0 4px 4px;
-          -webkit-background-clip: padding-box;
-          -moz-background-clip: padding-box;
-          background-clip: padding-box;
-        }
-        /* @end */
-        .chzn-container-single-nosearch .chzn-search input {
-          position: absolute;
-          left: -9000px;
-        }
-        /* @group Multi Chosen */
-        .chzn-container-multi .chzn-choices {
-          background-color: #ffffff;
-          border: 1px solid #cccccc;
-          -webkit-border-radius: 3px;
-          -moz-border-radius: 3px;
-          border-radius: 3px;
-          -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-          -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-          -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
-          -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
-          -o-transition: border linear 0.2s, box-shadow linear 0.2s;
-          transition: border linear 0.2s, box-shadow linear 0.2s;
-          margin: 0;
-          padding: 0;
-          cursor: text;
-          overflow: hidden;
-          height: auto !important;
-          height: 1%;
-          position: relative;
-        }
-        .chzn-container-multi .chzn-choices li {
-          float: left;
-          list-style: none;
-        }
-        .chzn-container-multi .chzn-choices .search-field {
-          white-space: nowrap;
-          margin: 0;
-          padding: 0;
-        }
-        .chzn-container-multi .chzn-choices .search-field input {
-          color: #666;
-          background: transparent !important;
-          border: 0 !important;
-          font-family: sans-serif;
-          font-size: 100%;
-          height: 15px;
-          padding: 5px;
-          margin: 1px 0;
-          outline: 0;
-          -webkit-box-shadow: none;
-          -moz-box-shadow: none;
-          box-shadow: none;
-        }
-        .chzn-container-multi .chzn-choices .search-field .default {
-          color: #999;
-        }
-        .chzn-container-multi .chzn-choices .search-choice {
-          -webkit-border-radius: 3px;
-          -moz-border-radius: 3px;
-          border-radius: 3px;
-          -webkit-background-clip: padding-box;
-          -moz-background-clip: padding-box;
-          background-clip: padding-box;
-          background-color: #f0f0f0;
-          background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), color-stop(50%, #f0f0f0), to(#eeeeee));
-          background-image: -webkit-linear-gradient(#f4f4f4, #f0f0f0 50%, #eeeeee);
-          background-image: -moz-linear-gradient(top, #f4f4f4, #f0f0f0 50%, #eeeeee);
-          background-image: -o-linear-gradient(#f4f4f4, #f0f0f0 50%, #eeeeee);
-          background-image: linear-gradient(#f4f4f4, #f0f0f0 50%, #eeeeee);
-          background-repeat: no-repeat;
-          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff4f4f4', endColorstr='#ffeeeeee', GradientType=0);
-          -webkit-box-shadow: 0 0 2px #ffffff inset, 0 1px 0 rgba(0,0,0,0.05);
-          -moz-box-shadow: 0 0 2px #ffffff inset, 0 1px 0 rgba(0,0,0,0.05);
-          box-shadow: 0 0 2px #ffffff inset, 0 1px 0 rgba(0,0,0,0.05);
-          color: #333;
-          border: 1px solid #aaaaaa;
-          line-height: 13px;
-          padding: 3px 20px 3px 5px;
-          margin: 3px 0 3px 5px;
-          position: relative;
-          cursor: default;
-        }
-        .chzn-container-multi .chzn-choices .search-choice-focus {
-          background: #d4d4d4;
-        }
-        .chzn-container-multi .chzn-choices .search-choice .search-choice-close {
-          position: absolute;
-          right: 3px;
-          top: 0;
-        }
-        .chzn-container-multi .chzn-choices .search-choice .search-choice-close:before {
-          content: '\00D7';
-          font-size: 20px;
-          font-weight: bold;
-          line-height: 14px;
-          color: #000000;
-          text-shadow: 0 1px 0 #ffffff;
-          opacity: 0.2;
-          filter: alpha(opacity=20);
-        }
-        .chzn-container-multi .chzn-choices .search-choice .search-choice-close:hover,
-        .chzn-container-multi .chzn-choices .search-choice-focus .search-choice-close {
-          text-decoration: none;
-          cursor: pointer;
-        }
-        .chzn-container-multi .chzn-choices .search-choice .search-choice-close:hover:before,
-        .chzn-container-multi .chzn-choices .search-choice-focus .search-choice-close:before {
-          color: #000000;
-          opacity: 0.4;
-          filter: alpha(opacity=40);
-        }
-        /* @end */
-        /* @group Results */
-        .chzn-container .chzn-results {
-          margin: 0 4px 4px 0;
-          max-height: 240px;
-          padding: 0 0 0 4px;
-          position: relative;
-          overflow-x: hidden;
-          overflow-y: auto;
-          -webkit-overflow-scrolling: touch;
-        }
-        .chzn-container-multi .chzn-results {
-          margin: -1px 0 0;
-          padding: 0;
-        }
-        .chzn-container .chzn-results li {
-          display: none;
-          line-height: 15px;
-          padding: 5px 6px;
-          margin: 0;
-          list-style: none;
-        }
-        .chzn-container .chzn-results .active-result {
-          cursor: pointer;
-          display: list-item;
-        }
-        .chzn-container .chzn-results .highlighted {
-          background-color: #1290c7;
-          background-image: -moz-linear-gradient(top, #149ed9, #107cab);
-          background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#149ed9), to(#107cab));
-          background-image: -webkit-linear-gradient(top, #149ed9, #107cab);
-          background-image: -o-linear-gradient(top, #149ed9, #107cab);
-          background-image: linear-gradient(to bottom, #149ed9, #107cab);
-          background-repeat: repeat-x;
-          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff149ed9', endColorstr='#ff107cab', GradientType=0);
-          color: #fff;
-        }
-        .chzn-container .chzn-results li em {
-          background: #feffde;
-          font-style: normal;
-        }
-        .chzn-container .chzn-results .highlighted em {
-          background: transparent;
-        }
-        .chzn-container .chzn-results .no-results {
-          background: #f4f4f4;
-          display: list-item;
-        }
-        .chzn-container .chzn-results .group-result {
-          cursor: default;
-          color: #999;
-          font-weight: bold;
-        }
-        .chzn-container .chzn-results .group-option {
-          padding-left: 15px;
-        }
-        .chzn-container-multi .chzn-drop .result-selected {
-          display: none;
-        }
-        /* @end */
-        /* @group Active  */
-        .chzn-container-active .chzn-single {
-          -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-          -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-          border: 1px solid #5897fb;
-        }
-        .chzn-container-active .chzn-single-with-drop {
-          border: 1px solid #aaa;
-          -webkit-box-shadow: 0 1px 0 #ffffff inset;
-          -moz-box-shadow: 0 1px 0 #ffffff inset;
-          box-shadow: 0 1px 0 #ffffff inset;
-          background-color: #f5f5f5;
-          background-image: -moz-linear-gradient(top, #eeeeee, #ffffff);
-          background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), to(#ffffff));
-          background-image: -webkit-linear-gradient(top, #eeeeee, #ffffff);
-          background-image: -o-linear-gradient(top, #eeeeee, #ffffff);
-          background-image: linear-gradient(to bottom, #eeeeee, #ffffff);
-          background-repeat: repeat-x;
-          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffffffff', GradientType=0);
-          -webkit-border-bottom-left-radius: 0;
-          -webkit-border-bottom-right-radius: 0;
-          -moz-border-radius-bottomleft: 0;
-          -moz-border-radius-bottomright: 0;
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
-        .chzn-container-active .chzn-single-with-drop div {
-          background: transparent;
-          border-left: none;
-        }
-        .chzn-container-active .chzn-single-with-drop div b:after {
-          content: '\f077';
-        }
-        .chzn-container-active .chzn-choices {
-          -webkit-border-bottom-left-radius: 0;
-          -webkit-border-bottom-right-radius: 0;
-          -moz-border-radius-bottomleft: 0;
-          -moz-border-radius-bottomright: 0;
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-          border-color: rgba(82, 168, 236, 0.8);
-          -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
-          -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
-          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
-        }
-        .chzn-container-active .chzn-choices .search-field input {
-          color: #111 !important;
-        }
-        /* @end */
-        /* @group Disabled Support */
-        .chzn-disabled {
-          cursor: default;
-          opacity: 0.5 !important;
-        }
-        .chzn-disabled .chzn-single {
-          cursor: default;
-        }
-        .chzn-disabled .chzn-choices .search-choice .search-choice-close {
-          cursor: default;
-        }
-        /* @end */
-        /* @group Right to Left */
-        .chzn-rtl {
-          text-align: right;
-        }
-        .chzn-rtl .chzn-single {
-          padding: 0 8px 0 0;
-          overflow: visible;
-        }
-        .chzn-rtl .chzn-single span {
-          margin-left: 26px;
-          margin-right: 0;
-          direction: rtl;
-        }
-        .chzn-rtl .chzn-single div {
-          left: 3px;
-          right: auto;
-        }
-        .chzn-rtl .chzn-single abbr {
-          left: 26px;
-          right: auto;
-        }
-        .chzn-rtl .chzn-choices .search-field input {
-          direction: rtl;
-        }
-        .chzn-rtl .chzn-choices li {
-          float: right;
-        }
-        .chzn-rtl .chzn-choices .search-choice {
-          padding: 3px 5px 3px 19px;
-          margin: 3px 5px 3px 0;
-        }
-        .chzn-rtl .chzn-choices .search-choice .search-choice-close {
-          left: 4px;
-          right: auto;
-        }
-        .chzn-rtl.chzn-container-single .chzn-results {
-          margin: 0 0 4px 4px;
-          padding: 0 4px 0 0;
-        }
-        .chzn-rtl .chzn-results .group-option {
-          padding-left: 0;
-          padding-right: 15px;
-        }
-        .chzn-rtl.chzn-container-active .chzn-single-with-drop div {
-          border-right: none;
-        }
-        .chzn-rtl.chzn-container-single .chzn-search:after {
-          right: auto;
-          left: 16px;
-        }
-        .chzn-rtl .chzn-search input {
-          background-color: #f5f5f5;
-          background-image: -moz-linear-gradient(top, #eeeeee, #ffffff);
-          background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), to(#ffffff));
-          background-image: -webkit-linear-gradient(top, #eeeeee, #ffffff);
-          background-image: -o-linear-gradient(top, #eeeeee, #ffffff);
-          background-image: linear-gradient(to bottom, #eeeeee, #ffffff);
-          background-repeat: repeat-x;
-          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffffffff', GradientType=0);
-          padding: 4px 5px 4px 20px;
-          direction: rtl;
-        }
-    </style>
+ 
 
 <script type="text/javascript">
     function getRisqueSection(){
@@ -753,6 +310,32 @@ var style = new OpenLayers.Style();
                 });
 
 
+             var layerVul = new OpenLayers.Layer.Vector("Zone vulnérable", {
+                    strategies: [new OpenLayers.Strategy.Fixed()],
+                    protocol: new OpenLayers.Protocol.HTTP({
+
+                        url: "/test/jsonrisquesVul/",
+                        format: new OpenLayers.Format.GeoJSON(),
+                        featureType: "smallworld",
+                        featureNS: "test/earth"
+
+                    }),
+                    styleMap: StyleMap
+                });
+
+            var layerDegre = new OpenLayers.Layer.Vector("Degrée d'exposition", {
+                    strategies: [new OpenLayers.Strategy.Fixed()],
+                    protocol: new OpenLayers.Protocol.HTTP({
+
+                        url: "/test/jsonrisquesDegre/",
+                        format: new OpenLayers.Format.GeoJSON(),
+                        featureType: "smallworld",
+                        featureNS: "test/earth"
+
+                    }),
+                    styleMap: StyleMap
+                });
+
 
 
 
@@ -770,7 +353,7 @@ var style = new OpenLayers.Style();
      map.addControl(fpControl);
                     //-------------------------------------------------------------------
 
-                map.addLayers([OSM, gsat,gsat, gphy, gmap, ghyb,layer,  layerbase]);
+                map.addLayers([OSM, gsat,gsat, gphy, gmap, ghyb,layer,layerbase,layerVul,layerDegre,]);
                 map.addControl(new OpenLayers.Control.MousePosition());
 
                 map.zoomToExtent(new OpenLayers.Bounds(
@@ -840,29 +423,12 @@ var style = new OpenLayers.Style();
     </div><!-- /.modal -->
 
     <div  id="menu" >
-        <form class="form-inline" action="/" name="seachform">
-                            <select class="chosen" data-placeholder="Rechercher un fabriquant..." style="width: 250px"
-                                name="search"    onchange="document.getElementsByName('seachform')[0].submit();">
-                                    <option value="tous">Tous</option>
-                                     <option value="#1">Priorite #1</option>
-                                     <option value="#2">Priorite #2</option>
-                                     <option value="#3">Priorite #3</option>
-                                     <option value="#4">Priorite #4</option>
 
-                            </select>
-                        </form>
 
     </div>
     <div id="map">
 
     </div>
-    {% load staticfiles %}
-
-    <script type="text/javascript">
-        $(function() {
-            $(".chosen").chosen();
-        });
-    </script>
 
 </body>
 </html>

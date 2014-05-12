@@ -29,6 +29,11 @@ urlpatterns = patterns('',
 
     url(r'^Risques$', 'gestionR.views.risques', name='risques'),
     url(r'^jsonrisques/$', 'gestionR.views.jsonrisques', name='jsonrisques'),
+
+    ## jsonrisque vulnerabilite et degreeexposition
+     url(r'^jsonrisquesVul/$', 'gestionR.views.jsonrisquesvulnerabilite', name='jsonrisquesvulnerabilite'),
+      url(r'^jsonrisquesDegre/$', 'gestionR.views.jsonrisquesdegreeexposition', name='jsonrisquesdegreeexposition'),
+
     url(r'^MapRisque/$', 'gestionR.views.maprisque', name='maprisque'),
     url(r'^jsonRisquesection/$', 'gestionR.views.jsonRisquesection', name='jsonRisquesection'),
 
