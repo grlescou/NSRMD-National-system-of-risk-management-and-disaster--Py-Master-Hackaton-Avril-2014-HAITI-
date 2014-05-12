@@ -2,7 +2,7 @@
 #-*- coding: utf-8 -*-
 from django import forms
 from gestionR.models import *
-from django.forms.widgets import DateInput, SelectMultiple, CheckboxSelectMultiple, Select, RadioSelect
+from django.forms.widgets import DateInput, SelectMultiple, CheckboxSelectMultiple, Select, RadioSelect, FileInput
 from gestionR.Data import *
 #
 # __author__ = 'Suy'
@@ -14,6 +14,21 @@ class EnqueteForm(forms.ModelForm):
         widgets = {
             'debutenquete': DateInput(attrs={'type': 'date'}),
             'finenquete': DateInput(attrs={'type': 'date'}),
+        }
+
+    def __init__(self, *args, **kwargs):
+        super(EnqueteForm, self).__init__(*args, **kwargs)
+        self.fields['finenquete'].required = False
+
+
+
+
+class FormFileWord(forms.ModelForm):
+    class Meta:
+        model = FileWord
+        exclude = ['enquete']
+        widgets = {
+            # 'file': FileInput(attrs={'type':'file','class':"btn btn-default", 'style':"float: right"}),
         }
 
 class PerceptionForm(forms.ModelForm):

@@ -6,6 +6,7 @@ from django.http import HttpResponse
 from django.template.loader import get_template
 from django.template import Context
 #from esih_hackathon.models import  User,  Formulaire
+from docx2html import convert
 from django.template import RequestContext
 from django.shortcuts import render_to_response, redirect
 from gestionR.forms import *
@@ -29,17 +30,43 @@ def index(request):
     #         Group(name=com.commune).save()
     #     except:
     #         pass
-
-    if not 'userid' in request.session:
-        return redirect("/")
     return render_to_response('index.html', locals(), context_instance=RequestContext(request))
 
 """ list enquete """
 def enquetes(request):
     if not 'userid' in request.session:
         return redirect("/")
+    formfile = FormFileWord()
+    if 'u' in request.GET:
+        if request.GET['u']=='1':
+            formfile = FormFileWord(request.POST,request.FILES)
+            print request.FILES['file']
+            if formfile.is_valid():
+                if 'file' in request.FILES:
+                    instance = formfile.save(commit=False)
+                    instance.save()
+                    link = 'C:\\Users\\Suy\geoDjango\\geoDjango\\templates\\static'.replace('\\','/')
+                    link = link +str(instance.filelink())
+                    print link
+                    print convert(link)
+
+                return HttpResponse(convert(request.FILES['file']))
+                # if 'file' in request.FILES:
+                #     instance.file = request.FILES['file']
     enquetes = Enquete.objects.all()
     return render_to_response('enquete/list.html', locals(), context_instance=RequestContext(request))
+
+# def downloadFile(request):
+#     view_data = DataManager()
+#     response = HttpResponse(view_data.readdocfile(2),content_type='application/vnd.ms-word')
+#     response['Content-Disposition'] = 'attachment; filename=rty.docx'
+#     return response;
+
+
+
+
+
+
 
 def jsonmapsallenquete(request):
     enquetes = Enquete.objects.all()
@@ -265,9 +292,9 @@ def formEnqueteNext(request,id):
              perception.enquete.complete = True
              perception.enquete.save()
              return redirect('/Enquetes')
-         # else:
+         else:
 
-         #     return HttpResponse("Error")
+             return HttpResponse("Error")
 
      return render_to_response('enquete/nextform.html',locals(),context_instance=RequestContext(request))
 
@@ -280,7 +307,9 @@ def presenceinstitutionnelle(request,id):
         return redirect("/")
     enquete = Enquete.objects.get(id=id)
     presences = PresenceInstitutionnelle.objects.filter(enquete_id=id)
+    presences1 = PresenceInstitutionnelle.objects.all()
     if request.method=='GET':
+        # institu = PresenceInstitutionnelle.objet.get()
         enquete = Enquete.objects.get(id=id)
         form = PresenceInstitutForm(commune=enquete.local)
     if request.method=='POST':
@@ -437,6 +466,23 @@ def evaluations(request,id):
             instance.enquete = Enquete.objects.get(id=id)
             instance.save()
     return render_to_response('enquete/evaluations.html', locals(), context_instance=RequestContext(request))
+
+def evaluationsrisque(request,id):
+    if not 'userid' in request.session:
+        return redirect("/")
+    enquete = Enquete.objects.get(id=id)
+    evaluations = Evaluation.objects.filter(enquete_id=id)
+    if request.method=='GET':
+        enquete = Enquete.objects.get(id=id)
+        form = EvaluationForm()
+    if request.method=='POST':
+        enquete = Enquete.objects.get(id=id)
+        form = EvaluationForm(request.POST)
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.enquete = Enquete.objects.get(id=id)
+            instance.save()
+    return render_to_response('risque/evaluation.html', locals(), context_instance=RequestContext(request))
 
 
 def sections(request):
@@ -684,51 +730,14 @@ def jsonrisques(request):
 ON public."hti_adm3".id=public."gestionR_degredexposition".local_id
 INNER JOIN  public."gestionR_vulnerabilite" ON public."hti_adm3".id=public."gestionR_vulnerabilite".local_id
 INNER JOIN public."gestionR_risque" ON public."gestionR_risque".id=public."gestionR_vulnerabilite".risquev_id;
-"""
 
-
+            """
     # AND public."gestionR_risque".id=public."gestionR_degredexposition".risqued_id;
     query = HtiAdm3.objects.raw(sql)
     djf = Django.Django(geodjango="geom", properties=['name_1','name_2','name_3', 'degre', 'niveau','risque'])  #['commune','niveau','departemen','section']
     geoj = GeoJSON.GeoJSON()
     s = geoj.encode(djf.decode(query))
     return HttpResponse(s)
-
-
-
-def jsonrisquesdegreeexposition(request):
-    sql = """SELECT * FROM public."hti_adm3" INNER JOIN public."gestionR_degredexposition"
-ON public."hti_adm3".id=public."gestionR_degredexposition".local_id
-INNER JOIN public."gestionR_risque" ON public."gestionR_risque".id=public."gestionR_vulnerabilite".risquev_id;
-"""
-
-
-    # AND public."gestionR_risque".id=public."gestionR_degredexposition".risqued_id;
-    query = HtiAdm3.objects.raw(sql)
-    djf = Django.Django(geodjango="geom", properties=['name_1','name_2','name_3', 'degre', 'niveau','risque'])  #['commune','niveau','departemen','section']
-    geoj = GeoJSON.GeoJSON()
-    s = geoj.encode(djf.decode(query))
-    return HttpResponse(s)
-
-
-
-def jsonrisquesvulnerabilite(request):
-    sql = """SELECT * FROM public."hti_adm3" INNER JOIN  public."gestionR_vulnerabilite" ON public."hti_adm3".id=public."gestionR_vulnerabilite".local_id
-INNER JOIN public."gestionR_risque" ON public."gestionR_risque".id=public."gestionR_vulnerabilite".risquev_id;
-"""
-
-
-    # AND public."gestionR_risque".id=public."gestionR_degredexposition".risqued_id;
-    query = HtiAdm3.objects.raw(sql)
-    djf = Django.Django(geodjango="geom", properties=['name_1','name_2','name_3', 'degre', 'niveau','risque'])  #['commune','niveau','departemen','section']
-    geoj = GeoJSON.GeoJSON()
-    s = geoj.encode(djf.decode(query))
-    return HttpResponse(s)
-
-
-
-
-
 
 def maprisque(request):
     return render_to_response('risque/map.html', locals(), context_instance=RequestContext(request))

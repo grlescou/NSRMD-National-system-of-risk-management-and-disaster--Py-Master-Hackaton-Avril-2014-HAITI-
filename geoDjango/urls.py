@@ -1,5 +1,8 @@
 from django.conf.urls import patterns, include, url
 
+from django.conf.urls.static import static
+from geoDjango import settings
+
 from django.contrib import admin
 import gestionR
 
@@ -26,6 +29,7 @@ urlpatterns = patterns('',
     url(r'^RessourcesHumaines/(\d+)/$','gestionR.views.ressourceshumaines'),
     url(r'^RessourcesDIntervention/(\d+)/$','gestionR.views.interventions'),
     url(r'^Evaluation/(\d+)/$','gestionR.views.evaluations'),
+    url(r'^EvaluationRisque/(\d+)/$','gestionR.views.evaluationsrisque'),
     url(r'^Sections$','gestionR.views.sections'),
     url(r'^logout$','users.views.logout'),
-)
+)+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

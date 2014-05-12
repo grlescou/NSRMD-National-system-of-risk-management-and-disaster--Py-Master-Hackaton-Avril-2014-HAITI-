@@ -3,297 +3,262 @@
 {% block content %}
     <div id="page-wrapper">
 
-    <div class="row">
-          <div class="col-lg-12">
-            <div class="panel panel-primary">
-{#              <div class="panel-heading">#}
-{#                <h3 class="panel-title">Présence institutionnelle</h3>#}
-{#              </div>#}
-              <div class="panel-body">
-    <form name="searchform" action="/PresenceInstutionnelle/{{id }}/">
-        <select name="idpresence" onchange="document.getElementsByName('seachform')[0].submit();">
-            {% for p in presences1 %}
-            <option value="{{ p.enquete.id }}">{{ p.enquete.local }}</option>
-
-            {% endfor %}
-        </select>
-       </form>
-
-     </div>
-            </div>
-          </div>
-        </div>
-
         <div class="row">
           <div class="col-lg-12">
             <div class="panel panel-primary">
-{#              <div class="panel-heading">#}
-{#                <h3 class="panel-title">Présence institutionnelle</h3>#}
-{#              </div>#}
-              <div class="panel-body">
-                 <form action="/PresenceInstutionnelle/{{ id }}/" method="POST">
-                            {% csrf_token %}
-                            {{ form.local.label_tag }}
-
-                            {{ form.local }}
-
-                            {{ form.existenceclpc.label_tag }}
-
-                            {% for radio in form.existenceclpc %}
-                                {{ radio }}
-                            {% endfor %}
-
-                            <input type="submit" value="Enregistrer"/>
-
-                 </form>
-
+              <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Traffic Statistics: October 1, 2013 - October 31, 2013</h3>
               </div>
-            </div>
-          </div>
-        </div><!-- /.row -->
+              <div class="panel-body">
+                    <table class="table table-bordered table-hover table-striped tablesorter">
 
-
-        <div class="row">
-    <div class="col-lg-12">
-    <div class="panel panel-primary">
-    <div class="panel-heading">
-
-        <h3 class="panel-title">Présence institutionnelle </h3>
-
-    </div>
-    <div class="panel-body">
-        <table class="table table-bordered table-hover table-striped tablesorter">
-
-
-            <tr style='mso-yfti-irow:1;height:14.9pt'>
-                <td width=196 nowrap rowspan=2 valign=top style='width:147.2pt;border:solid #428bca 1.0pt;
+    <tr style='mso-yfti-irow:1;height:14.9pt'>
+        <td width=196 nowrap rowspan=2 valign=top style='width:147.2pt;border:solid #428bca 1.0pt;
   mso-border-themecolor:text1;border-top:none;mso-border-top-alt:solid #428bca .5pt;
   mso-border-top-themecolor:text1;mso-border-alt:solid #428bca .5pt;mso-border-themecolor:
   text1;padding:0in 5.4pt 0in 5.4pt;height:14.9pt'>
-                    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+            <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
   text-align:center;line-height:normal;mso-layout-grid-align:none;text-autospace:
   none'><b><span lang=FR style='font-size:10.0pt;font-family:"Calibri","sans-serif";
   mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
   ArialMT;mso-bidi-language:AR-SA'>Sections communales</span></b></p>
-                </td>
-                <td width=78 nowrap colspan=2 valign=top style='width:58.4pt;border-top:none;
+        </td>
+        <td width=78 nowrap colspan=2 valign=top style='width:58.4pt;border-top:none;
   border-left:none;border-bottom:solid #428bca 1.0pt;mso-border-bottom-themecolor:
   text1;border-right:solid #428bca 1.0pt;mso-border-right-themecolor:text1;
   mso-border-top-alt:solid #428bca .5pt;mso-border-top-themecolor:text1;
   mso-border-left-alt:solid #428bca .5pt;mso-border-left-themecolor:text1;
   mso-border-alt:solid #428bca .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
   height:14.9pt'>
-                    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+            <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
   text-align:center;line-height:normal;mso-layout-grid-align:none;text-autospace:
   none'><b><span lang=FR style='font-size:10.0pt;font-family:"Calibri","sans-serif";
   mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
   ArialMT;mso-bidi-language:AR-SA'>Existence de CLPC</span></b></p>
-                </td>
-                <td width=87 nowrap rowspan=2 valign=top style='width:64.95pt;border-top:
+        </td>
+        <td width=87 nowrap rowspan=2 valign=top style='width:64.95pt;border-top:
   none;border-left:none;border-bottom:solid #428bca 1.0pt;mso-border-bottom-themecolor:
   text1;border-right:solid #428bca 1.0pt;mso-border-right-themecolor:text1;
   mso-border-top-alt:solid #428bca .5pt;mso-border-top-themecolor:text1;
   mso-border-left-alt:solid #428bca .5pt;mso-border-left-themecolor:text1;
   mso-border-alt:solid #428bca .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
   height:14.9pt'>
-                    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+            <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
   text-align:center;line-height:normal;mso-layout-grid-align:none;text-autospace:
   none'><b><span lang=FR style='font-size:10.0pt;font-family:"Calibri","sans-serif";
   mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
   ArialMT;mso-bidi-language:AR-SA'>Résultats</span></b></p>
-                </td>
-                <td width=156 nowrap rowspan=2 valign=top style='width:117.05pt;border-top:
+        </td>
+        <td width=156 nowrap rowspan=2 valign=top style='width:117.05pt;border-top:
   none;border-left:none;border-bottom:solid #428bca 1.0pt;mso-border-bottom-themecolor:
   text1;border-right:solid #428bca 1.0pt;mso-border-right-themecolor:text1;
   mso-border-top-alt:solid #428bca .5pt;mso-border-top-themecolor:text1;
   mso-border-left-alt:solid #428bca .5pt;mso-border-left-themecolor:text1;
   mso-border-alt:solid #428bca .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
   height:14.9pt'>
-                    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+            <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
   text-align:center;line-height:normal;mso-layout-grid-align:none;text-autospace:
   none'>
-                        <b><span lang=FR
-                                 style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+                <b><span lang=FR
+                                                                                           style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
   minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:ArialMT;
   mso-bidi-language:AR-SA'>Objectifs</span></b></p>
-                </td>
-            </tr>
-
-            <tr style='mso-yfti-irow:2;height:15.65pt'>
-                <td width=36 nowrap valign=top style='width:27.0pt;border-top:none;
+        </td>
+        <td width=156 nowrap rowspan=2 valign=top style='width:117.05pt;border-top:
+  none;border-left:none;border-bottom:solid #428bca 1.0pt;mso-border-bottom-themecolor:
+  text1;border-right:solid #428bca 1.0pt;mso-border-right-themecolor:text1;
+  mso-border-top-alt:solid #428bca .5pt;mso-border-top-themecolor:text1;
+  mso-border-left-alt:solid #428bca .5pt;mso-border-left-themecolor:text1;
+  mso-border-alt:solid #428bca .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
+  height:14.9pt'>
+            <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-layout-grid-align:none;text-autospace:
+  none'>
+                <b><span lang=FR
+                                                                                           style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:ArialMT;
+  mso-bidi-language:AR-SA'>Action</span></b></p>
+        </td>
+    </tr>
+    <tr style='mso-yfti-irow:2;height:15.65pt'>
+        <td width=36 nowrap valign=top style='width:27.0pt;border-top:none;
   border-left:none;border-bottom:solid #428bca 1.0pt;mso-border-bottom-themecolor:
   text1;border-right:solid #428bca 1.0pt;mso-border-right-themecolor:text1;
   mso-border-top-alt:solid #428bca .5pt;mso-border-top-themecolor:text1;
   mso-border-left-alt:solid #428bca .5pt;mso-border-left-themecolor:text1;
   mso-border-alt:solid #428bca .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
   height:15.65pt'>
-                    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+            <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
   text-align:center;line-height:normal;mso-layout-grid-align:none;text-autospace:
   none'><b><span lang=FR style='font-size:10.0pt;font-family:"Calibri","sans-serif";
   mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
   ArialMT;mso-bidi-language:AR-SA'>Oui</span></b></p>
-                </td>
-                <td width=42 nowrap valign=top style='width:31.4pt;border-top:none;
+        </td>
+        <td width=42 nowrap valign=top style='width:31.4pt;border-top:none;
   border-left:none;border-bottom:solid #428bca 1.0pt;mso-border-bottom-themecolor:
   text1;border-right:solid #428bca 1.0pt;mso-border-right-themecolor:text1;
   mso-border-top-alt:solid #428bca .5pt;mso-border-top-themecolor:text1;
   mso-border-left-alt:solid #428bca .5pt;mso-border-left-themecolor:text1;
   mso-border-alt:solid #428bca .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
   height:15.65pt'>
-                    <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+            <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
   text-align:center;line-height:normal;mso-layout-grid-align:none;text-autospace:
   none'><b><span lang=FR style='font-size:10.0pt;font-family:"Calibri","sans-serif";
   mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
   ArialMT;mso-bidi-language:AR-SA'>Non</span></b></p>
-                </td>
-            </tr>
+        </td>
+    </tr>
+    {% for section in sections %}
+    <tr style='mso-yfti-irow:5;height:14.9pt'>
 
-            {% for presence in presences %}
-                <tr style='mso-yfti-irow:5;height:14.9pt'>
+        <form action="/PresenceInstutionnelle" method="post">
+            {% csrf_token %}
 
-                    <td width=196 nowrap valign=top style='width:147.2pt;border:solid #428bca 1.0pt;
+        <td width=196 nowrap valign=top style='width:147.2pt;border:solid #428bca 1.0pt;
   mso-border-themecolor:text1;border-top:none;mso-border-top-alt:solid #428bca .5pt;
   mso-border-top-themecolor:text1;mso-border-alt:solid #428bca .5pt;mso-border-themecolor:
   text1;padding:0in 5.4pt 0in 5.4pt;height:14.9pt'>
-                        <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal;mso-layout-grid-align:none;text-autospace:none'><b><span lang=FR
                                                                   style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
               minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:ArialMT;
               mso-bidi-language:AR-SA'>&nbsp;
-                   {{ presence.local }}
-          </span></b> &emsp;&emsp;&emsp;
 
+             {{ section.section }}
+                {% if perception|args:section.id %}
 
-                        </p>
-                    </td>
-                    <td width=36 nowrap valign=top style='width:27.0pt;border-top:none;
+                {% else %}
+                    <input type="text" name="enquete" value="{{ section.id }}" />
+                {% endif %}
+          </span></b></p>
+        </td>
+            {% for radio in form.existenceclpc %}
+        <td width=36 nowrap valign=top style='width:27.0pt;border-top:none;
   border-left:none;border-bottom:solid #428bca 1.0pt;mso-border-bottom-themecolor:
   text1;border-right:solid #428bca 1.0pt;mso-border-right-themecolor:text1;
   mso-border-top-alt:solid #428bca .5pt;mso-border-top-themecolor:text1;
   mso-border-left-alt:solid #428bca .5pt;mso-border-left-themecolor:text1;
   mso-border-alt:solid #428bca .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
   height:14.9pt'>
-                        <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
                 normal;mso-layout-grid-align:none;text-autospace:none'><b><span lang=FR
-                                                                                style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+                                                                  style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
                     minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:ArialMT;
                        mso-bidi-language:AR-SA'>&nbsp;
-
-            </span></b>
-
-                        {% ifequal presence.existenceclpc 'Oui'  %}
-                            X
-                        {% endifequal %}
-                        </p>
-                    </td>
-                    <td width=87 nowrap valign=top style='width:64.95pt;border-top:none;
+                {% with form.existenceclpc|first as first_object %}
+                {% endwith %}
+                {% if presenceInstitutionnelle.perception|args:section.id %}
+                    {{ presenceInstitutionnelle.perception.existenceclpc }}
+                 {% else %}
+                    {{ radio }}
+                  {% endif %}
+            </span></b></p>
+        </td>
+        {% endfor %}
+        <td width=87 nowrap valign=top style='width:64.95pt;border-top:none;
   border-left:none;border-bottom:solid #428bca 1.0pt;mso-border-bottom-themecolor:
   text1;border-right:solid #428bca 1.0pt;mso-border-right-themecolor:text1;
   mso-border-top-alt:solid #428bca .5pt;mso-border-top-themecolor:text1;
   mso-border-left-alt:solid #428bca .5pt;mso-border-left-themecolor:text1;
   mso-border-alt:solid #428bca .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
   height:14.9pt'>
-                        <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal;mso-layout-grid-align:none;text-autospace:none'><b><span lang=FR
                                                                   style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
   minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:ArialMT;
   mso-bidi-language:AR-SA'>&nbsp;
 
-            </span></b>
-                        {% ifequal presence.existenceclpc 'Non'  %}
-                            X
-                        {% endifequal %}
-                        </p>
-                    </td>
-                    <td width=156 nowrap valign=top style='width:117.05pt;border-top:none;
+            </span></b></p>
+        </td>
+        <td width=156 nowrap valign=top style='width:117.05pt;border-top:none;
               border-left:none;border-bottom:solid #428bca 1.0pt;mso-border-bottom-themecolor:
               text1;border-right:solid #428bca 1.0pt;mso-border-right-themecolor:text1;
               mso-border-top-alt:solid #428bca .5pt;mso-border-top-themecolor:text1;
               mso-border-left-alt:solid #428bca .5pt;mso-border-left-themecolor:text1;
               mso-border-alt:solid #428bca .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
               height:14.9pt'>
-                        <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
                 normal;mso-layout-grid-align:none;text-autospace:none'><b><span lang=FR
-                                                                                style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+                                                                  style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
               minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:ArialMT;
-              mso-bidi-language:AR-SA'>&nbsp;</span></b>
+              mso-bidi-language:AR-SA'>&nbsp;</span></b></p>
+        </td>
 
-                            {{ presence.resultat }}%
-
-                        </p>
-                    </td>
-                    <td width=156 nowrap valign=top style='width:117.05pt;border-top:none;
+        <td width=156 nowrap valign=top style='width:117.05pt;border-top:none;
               border-left:none;border-bottom:solid #428bca 1.0pt;mso-border-bottom-themecolor:
               text1;border-right:solid #428bca 1.0pt;mso-border-right-themecolor:text1;
               mso-border-top-alt:solid #428bca .5pt;mso-border-top-themecolor:text1;
               mso-border-left-alt:solid #428bca .5pt;mso-border-left-themecolor:text1;
               mso-border-alt:solid #428bca .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
               height:14.9pt'>
-                        <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
                 normal;mso-layout-grid-align:none;text-autospace:none'><b><span lang=FR
-                                                                                style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+                                                                  style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
               minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:ArialMT;
-              mso-bidi-language:AR-SA'>&nbsp;</span></b>
+              mso-bidi-language:AR-SA'>
 
-                            {{ presence.objectif }}%
+                <input type="submit" value="Enregistrer" /> </a>
 
-                        </p>
-                    </td>
-                </tr>
-            {% endfor %}
-            <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes;height:15.65pt'>
-                <td width=196 nowrap valign=top style='width:147.2pt;border:solid #428bca 1.0pt;
+              </span></b></p>
+        </td>
+
+        </form>
+
+    </tr>
+
+   {% endfor %}
+
+    <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes;height:15.65pt'>
+        <td width=196 nowrap valign=top style='width:147.2pt;border:solid #428bca 1.0pt;
   mso-border-themecolor:text1;border-top:none;mso-border-top-alt:solid #428bca .5pt;
   mso-border-top-themecolor:text1;mso-border-alt:solid #428bca .5pt;mso-border-themecolor:
   text1;padding:0in 5.4pt 0in 5.4pt;height:15.65pt'></td>
-                <td width=36 nowrap valign=top style='width:27.0pt;border-top:none;
+        <td width=36 nowrap valign=top style='width:27.0pt;border-top:none;
   border-left:none;border-bottom:solid #428bca 1.0pt;mso-border-bottom-themecolor:
   text1;border-right:solid #428bca 1.0pt;mso-border-right-themecolor:text1;
   mso-border-top-alt:solid #428bca .5pt;mso-border-top-themecolor:text1;
   mso-border-left-alt:solid #428bca .5pt;mso-border-left-themecolor:text1;
   mso-border-alt:solid #428bca .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
   height:15.65pt'></td>
-                <td width=42 nowrap valign=top style='width:31.4pt;border-top:none;
+        <td width=42 nowrap valign=top style='width:31.4pt;border-top:none;
   border-left:none;border-bottom:solid #428bca 1.0pt;mso-border-bottom-themecolor:
   text1;border-right:solid #428bca 1.0pt;mso-border-right-themecolor:text1;
   mso-border-top-alt:solid #428bca .5pt;mso-border-top-themecolor:text1;
   mso-border-left-alt:solid #428bca .5pt;mso-border-left-themecolor:text1;
   mso-border-alt:solid #428bca .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
   height:15.65pt'></td>
-                <td width=87 nowrap valign=top style='width:64.95pt;border-top:none;
+        <td width=87 nowrap valign=top style='width:64.95pt;border-top:none;
   border-left:none;border-bottom:solid #428bca 1.0pt;mso-border-bottom-themecolor:
   text1;border-right:solid #428bca 1.0pt;mso-border-right-themecolor:text1;
   mso-border-top-alt:solid #428bca .5pt;mso-border-top-themecolor:text1;
   mso-border-left-alt:solid #428bca .5pt;mso-border-left-themecolor:text1;
   mso-border-alt:solid #428bca .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
   height:15.65pt'>
-                    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal;mso-layout-grid-align:none;text-autospace:none'><b><span lang=FR
                                                                   style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
   minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:ArialMT;
   mso-bidi-language:AR-SA'>&nbsp;</span></b></p>
-                </td>
-                <td width=156 nowrap valign=top style='width:117.05pt;border-top:none;
+        </td>
+        <td width=156 nowrap valign=top style='width:117.05pt;border-top:none;
   border-left:none;border-bottom:solid #428bca 1.0pt;mso-border-bottom-themecolor:
   text1;border-right:solid #428bca 1.0pt;mso-border-right-themecolor:text1;
   mso-border-top-alt:solid #428bca .5pt;mso-border-top-themecolor:text1;
   mso-border-left-alt:solid #428bca .5pt;mso-border-left-themecolor:text1;
   mso-border-alt:solid #428bca .5pt;mso-border-themecolor:text1;padding:0in 5.4pt 0in 5.4pt;
   height:15.65pt'>
-                    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal;mso-layout-grid-align:none;text-autospace:none'><b><span lang=FR
                                                                   style='font-size:10.0pt;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
   minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:ArialMT;
-  mso-bidi-language:AR-SA'>100%</span></b>
-
-                    </p>
-                </td>
-            </tr>
-        </table>
-    </div>
-    </div>
-    </div>
-    </div>
+  mso-bidi-language:AR-SA'>100%</span></b></p>
+        </td>
+    </tr>
+    </table>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.row -->
 
       </div><!-- /#page-wrapper -->
 

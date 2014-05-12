@@ -310,31 +310,6 @@ var style = new OpenLayers.Style();
                 });
 
 
-             var layerVul = new OpenLayers.Layer.Vector("Zone vulnérable", {
-                    strategies: [new OpenLayers.Strategy.Fixed()],
-                    protocol: new OpenLayers.Protocol.HTTP({
-
-                        url: "/test/jsonrisquesVul/",
-                        format: new OpenLayers.Format.GeoJSON(),
-                        featureType: "smallworld",
-                        featureNS: "test/earth"
-
-                    }),
-                    styleMap: StyleMap
-                });
-
-            var layerDegre = new OpenLayers.Layer.Vector("Degrée d'exposition", {
-                    strategies: [new OpenLayers.Strategy.Fixed()],
-                    protocol: new OpenLayers.Protocol.HTTP({
-
-                        url: "/test/jsonrisquesDegre/",
-                        format: new OpenLayers.Format.GeoJSON(),
-                        featureType: "smallworld",
-                        featureNS: "test/earth"
-
-                    }),
-                    styleMap: StyleMap
-                });
 
 
 

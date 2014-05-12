@@ -10,10 +10,21 @@
                 <h3 class="panel-title"><i class="fa fa-money"></i>&nbsp;Zones degré d'exposition {{ titletable }}</h3>
               </div>
               <div class="panel-body">
+              <div class="text-right">
+                  {% if d %}
+                    <a href="/test/MapdegreDexposition/?n={{ d }}" >View on map <i class="fa fa-arrow-circle-right"></i></a>
+                  {% else %}
+                    <a href="/test/MapdegreDexposition/" >View on map <i class="fa fa-arrow-circle-right"></i></a>
+                  {% endif %}
+                </div>
                 <div class="table-responsive">
+
                   <table class="table table-bordered table-hover table-striped tablesorter">
                     <thead>
                         <tr>
+                            <th nowrap rowspan=2 valign=top >
+                                Actions
+                            </th>
                             <th nowrap rowspan=2 valign=top >
                                 Communes
                             </th>
@@ -52,6 +63,9 @@
                     <tbody>
                         {% for zone in zones %}
                             <tr>
+                                <td><a href="/EvaluationRisque/{{ dataManager|args:zone.risqued_id|call:"enqueterisque" }}/"  >Evaluation</a> <a  href="/Preparation/{{ zone.enquete.id }}/" >Preparation</a>
+
+                                </td>
                                 <td>{{ zone.name_2 }}</td>
                                 <td>{{ zone.name_3 }}</td>
                                 <td>{{ dataManager|args:zone.risqued_id|call:"getrisque" }}</td>
@@ -65,13 +79,7 @@
                     </tbody>
                   </table>
                 </div>
-                <div class="text-right">
-                  {% if d %}
-                    <a href="/test/MapdegreDexposition/?n={{ d }}" >View on map <i class="fa fa-arrow-circle-right"></i></a>
-                  {% else %}
-                    <a href="/test/MapdegreDexposition/" >View on map <i class="fa fa-arrow-circle-right"></i></a>
-                  {% endif %}
-                </div>
+
               </div>
             </div>
           </div>

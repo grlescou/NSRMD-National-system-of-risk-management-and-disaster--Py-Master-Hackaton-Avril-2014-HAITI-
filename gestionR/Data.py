@@ -5,7 +5,7 @@ RISQUE = (
         ('Cyclones','Cyclones'),
         ('Foudre','Foudre'),
         ('Tsunami','Tsunami'),
-        (u'Secheresse',u'Secheresse'),
+        ('Secheresse','Secheresse'),
         ('Eboulement','Eboulement'),
         ('Innodation','Innodation'),
         ('Glissement de terrain','Glissement de terrain'),
@@ -13,21 +13,16 @@ RISQUE = (
         ('Incendie','Incendie'),
         ('Erosion','Erosion'),
     )
-
-
-
 EFFETSEG = (
-    (u'Rupture de système de communication',u'Rupture de système de communication'),
-    (u'Interruption du courant électrique',u'Interruption du courant électrique'),
-    (u'Rupture du transport routier',u'Rupture du transport routier'),
-    (u'Interruption des activités économiques',u'Interruption des activités économiques'),
-    (u'Evacuation massique/Déplacement de population',u'Evacuation massique/Déplacement de population'),
-    (u'Surcharge des services de santé/services mortuaires',u'Surcharge des services de santé/services mortuaires'),
-    (u'Tarissement de sources à certains endroits',u'Tarissement de sources à certains endroits'),
+    ('Rupture de système de communication','Rupture de système de communication'),
+    ('Interruption du courant électrique','Interruption du courant électrique'),
+    ('Rupture du transport routier','Rupture du transport routier'),
+    ('Interruption des activités économiques','Interruption des activités économiques'),
+    ('Evacuation massique/Déplacement de population','Evacuation massique/Déplacement de population'),
+    ('Surcharge des services de santé/services mortuaires','Surcharge des services de santé/services mortuaires'),
+    ('Tarissement de sources à certains endroits','Tarissement de sources à certains endroits'),
 )
 
-
-#gggasg
 DEGRE = (
     ("Fortement","Fortement"),
     ("Moderement","Moderement"),

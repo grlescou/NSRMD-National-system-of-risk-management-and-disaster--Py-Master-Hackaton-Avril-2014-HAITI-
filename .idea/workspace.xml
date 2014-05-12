@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gestionR/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="698" column="21" selection-start="30177" selection-end="30177" vertical-scroll-proportion="0.49010655" vertical-offset="11476" max-vertical-offset="13549">
+            <state line="751" column="13" selection-start="32682" selection-end="32682" vertical-scroll-proportion="-24.44" vertical-offset="12088" max-vertical-offset="13702">
               <folding />
             </state>
           </provider>
@@ -35,7 +35,28 @@
       <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/geoDjango/templates/risque/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="2617" selection-end="2617" vertical-scroll-proportion="-14.384615" vertical-offset="289" max-vertical-offset="7463">
+            <state line="408" column="7" selection-start="10095" selection-end="13518" vertical-scroll-proportion="-23.923077" vertical-offset="6314" max-vertical-offset="7038">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nextform.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/nextform.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="149" column="25" selection-start="4916" selection-end="4916" vertical-scroll-proportion="-97.42308" vertical-offset="0" max-vertical-offset="3026">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/map.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="380" column="0" selection-start="13301" selection-end="13301" vertical-scroll-proportion="0.7865854" vertical-offset="5944" max-vertical-offset="6681">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -47,7 +68,7 @@
       <file leaf-file-name="Data.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gestionR/Data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="1137" selection-end="1137" vertical-scroll-proportion="-18.36" vertical-offset="0" max-vertical-offset="714">
+            <state line="21" column="0" selection-start="904" selection-end="904" vertical-scroll-proportion="-14.28" vertical-offset="0" max-vertical-offset="629">
               <folding />
             </state>
           </provider>
@@ -56,7 +77,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/geoDjango/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="58" selection-start="3469" selection-end="3469" vertical-scroll-proportion="-11.84" vertical-offset="2050" max-vertical-offset="2720">
+            <state line="138" column="9" selection-start="3420" selection-end="3420" vertical-scroll-proportion="-11.84" vertical-offset="2050" max-vertical-offset="2720">
               <folding />
             </state>
           </provider>
@@ -74,8 +95,22 @@
       <file leaf-file-name="masterpage.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/geoDjango/templates/masterpage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="4" selection-start="428" selection-end="494" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="10591">
-              <folding />
+            <state line="14" column="4" selection-start="428" selection-end="494" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="9724">
+              <folding>
+                <marker date="1399849502000" expanded="true" signature="54:22698" placeholder="..." />
+                <marker date="1399849502000" expanded="true" signature="715:22690" placeholder="..." />
+                <marker date="1399849502000" expanded="true" signature="739:4851" placeholder="..." />
+                <marker date="1399849502000" expanded="true" signature="840:4791" placeholder="..." />
+                <marker date="1399849502000" expanded="true" signature="1541:4752" placeholder="..." />
+                <marker date="1399849502000" expanded="true" signature="1588:3166" placeholder="..." />
+                <marker date="1399849502000" expanded="true" signature="2932:3166" placeholder="..." />
+                <marker date="1399849502000" expanded="true" signature="3129:3166" placeholder="..." />
+                <marker date="1399849502000" expanded="true" signature="4596:4737" placeholder="..." />
+                <marker date="1399849502000" expanded="true" signature="4596:4721" placeholder="..." />
+                <marker date="1399849502000" expanded="true" signature="4596:4703" placeholder="..." />
+                <marker date="1399849502000" expanded="true" signature="5690:5774" placeholder="..." />
+                <marker date="1399849502000" expanded="true" signature="5802:22679" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,16 +118,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/geoDjango/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="61" selection-start="1284" selection-end="1284" vertical-scroll-proportion="-16.32" vertical-offset="0" max-vertical-offset="578">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="27" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1139">
+            <state line="31" column="61" selection-start="1421" selection-end="1421" vertical-scroll-proportion="-16.32" vertical-offset="85" max-vertical-offset="663">
               <folding />
             </state>
           </provider>
@@ -101,7 +127,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gestionR/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1956" selection-end="1956" vertical-scroll-proportion="-21.0" vertical-offset="36" max-vertical-offset="816">
+            <state line="31" column="0" selection-start="1673" selection-end="1673" vertical-scroll-proportion="-20.4" vertical-offset="0" max-vertical-offset="799">
               <folding />
             </state>
           </provider>
@@ -117,7 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/gestionR/forms.py" />
         <option value="$PROJECT_DIR$/geoDjango/templates/enquete/ressources.html" />
         <option value="$PROJECT_DIR$/geoDjango/templates/enquete/intervention.html" />
         <option value="$PROJECT_DIR$/geoDjango/templates/enquete/evaluations.html" />
@@ -125,14 +150,15 @@
         <option value="$PROJECT_DIR$/geoDjango/templates/risque/list.html" />
         <option value="$PROJECT_DIR$/gestionR/manager.py" />
         <option value="$PROJECT_DIR$/geoDjango/urls.py" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/enquete/nextform.html" />
         <option value="$PROJECT_DIR$/geoDjango/templates/enquete/list.html" />
         <option value="$PROJECT_DIR$/geoDjango/templates/static/css/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/geoDjango/settings.py" />
         <option value="$PROJECT_DIR$/gestionR/urls.py" />
-        <option value="$PROJECT_DIR$/geoDjango/templates/risque/map.html" />
         <option value="$PROJECT_DIR$/gestionR/Data.py" />
         <option value="$PROJECT_DIR$/gestionR/views.py" />
+        <option value="$PROJECT_DIR$/geoDjango/templates/enquete/nextform.html" />
+        <option value="$PROJECT_DIR$/geoDjango/templates/risque/map.html" />
+        <option value="$PROJECT_DIR$/geoDjango/templates/enquete/map.html" />
       </list>
     </option>
   </component>
@@ -189,52 +215,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="geoDjango" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geoDjango" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geoDjango" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geoDjango" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geoDjango" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gestionR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geoDjango" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geoDjango" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gestionR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templatetags" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -517,7 +497,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17501585" sideWeight="0.9847434" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1769437" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -532,22 +512,22 @@
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17295597" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2907855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37155962" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17501585" sideWeight="0.9847434" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1769437" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -567,18 +547,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/nextform.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="32" selection-start="4019" selection-end="4019" vertical-scroll-proportion="0.0" vertical-offset="2006" max-vertical-offset="3026">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/static/jscript/OpenLayers-2.13.1/GeoExt/lib/GeoExt/data/PrintPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5695" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/geoDjango/templates/static/jscript/GeoExt/lib/GeoExt/data/PrintPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5695" />
@@ -598,7 +566,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="27" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1139">
+        <state line="41" column="27" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1343">
           <folding />
         </state>
       </provider>
@@ -612,8 +580,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/geoDjango/templates/masterpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="4" selection-start="428" selection-end="494" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="10591">
-          <folding />
+        <state line="14" column="4" selection-start="428" selection-end="494" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="9724">
+          <folding>
+            <marker date="1399849502000" expanded="true" signature="54:22698" placeholder="..." />
+            <marker date="1399849502000" expanded="true" signature="715:22690" placeholder="..." />
+            <marker date="1399849502000" expanded="true" signature="739:4851" placeholder="..." />
+            <marker date="1399849502000" expanded="true" signature="840:4791" placeholder="..." />
+            <marker date="1399849502000" expanded="true" signature="1541:4752" placeholder="..." />
+            <marker date="1399849502000" expanded="true" signature="1588:3166" placeholder="..." />
+            <marker date="1399849502000" expanded="true" signature="2932:3166" placeholder="..." />
+            <marker date="1399849502000" expanded="true" signature="3129:3166" placeholder="..." />
+            <marker date="1399849502000" expanded="true" signature="4596:4737" placeholder="..." />
+            <marker date="1399849502000" expanded="true" signature="4596:4721" placeholder="..." />
+            <marker date="1399849502000" expanded="true" signature="4596:4703" placeholder="..." />
+            <marker date="1399849502000" expanded="true" signature="5690:5774" placeholder="..." />
+            <marker date="1399849502000" expanded="true" signature="5802:22679" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -626,31 +608,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/geoDjango/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="61" selection-start="1284" selection-end="1284" vertical-scroll-proportion="-16.32" vertical-offset="0" max-vertical-offset="578">
+        <state line="31" column="61" selection-start="1421" selection-end="1421" vertical-scroll-proportion="-16.32" vertical-offset="85" max-vertical-offset="663">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/geoDjango/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="58" selection-start="3469" selection-end="3469" vertical-scroll-proportion="-11.84" vertical-offset="2050" max-vertical-offset="2720">
+        <state line="138" column="9" selection-start="3420" selection-end="3420" vertical-scroll-proportion="-11.84" vertical-offset="2050" max-vertical-offset="2720">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geoDjango/templates/risque/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="2617" selection-end="2617" vertical-scroll-proportion="-14.384615" vertical-offset="289" max-vertical-offset="7463">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gestionR/Data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="1137" selection-end="1137" vertical-scroll-proportion="-18.36" vertical-offset="0" max-vertical-offset="714">
+        <state line="21" column="0" selection-start="904" selection-end="904" vertical-scroll-proportion="-14.28" vertical-offset="0" max-vertical-offset="629">
           <folding />
         </state>
       </provider>
@@ -659,22 +631,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="16" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.31492537" vertical-offset="248" max-vertical-offset="918">
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gestionR/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1956" selection-end="1956" vertical-scroll-proportion="-21.0" vertical-offset="36" max-vertical-offset="816">
+        <state line="31" column="0" selection-start="1673" selection-end="1673" vertical-scroll-proportion="-20.4" vertical-offset="0" max-vertical-offset="799">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gestionR/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="698" column="21" selection-start="30177" selection-end="30177" vertical-scroll-proportion="0.49010655" vertical-offset="11476" max-vertical-offset="13549">
+        <state line="751" column="13" selection-start="32682" selection-end="32682" vertical-scroll-proportion="-24.44" vertical-offset="12088" max-vertical-offset="13702">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/nextform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="25" selection-start="4916" selection-end="4916" vertical-scroll-proportion="-97.42308" vertical-offset="0" max-vertical-offset="3026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geoDjango/templates/risque/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="408" column="7" selection-start="10095" selection-end="13518" vertical-scroll-proportion="-23.923077" vertical-offset="6314" max-vertical-offset="7038">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geoDjango/templates/enquete/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="380" column="0" selection-start="13301" selection-end="13301" vertical-scroll-proportion="0.7865854" vertical-offset="5944" max-vertical-offset="6681">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

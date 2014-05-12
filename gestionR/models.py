@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 import ast
+import os
 from django.contrib.auth.models import User
 
 from django.contrib.gis.db import models
@@ -110,10 +111,35 @@ class Enquete(models.Model):
     datecreation = models.DateField()
     datemodification = models.DateField()
     debutenquete = models.DateField()
-    finenquete = models.DateField()
+    finenquete = models.DateField(null=True,blank=True)
     local = models.ForeignKey(HtiAdm2)
     user = models.ForeignKey(User)
     complete = models.BooleanField(default=False)
+
+class FileWord(models.Model):
+    def path_and_rename(path):
+        def wrapper(instance, filename):
+            ext = filename.split('.')[-1]
+            # get filename
+            filename = '{}.{}'.format(instance.pk, 'docx')
+            # return the whole path to the file
+
+            return os.path.join(path, filename)
+        return wrapper
+    file = models.FileField(upload_to='docenquete/',help_text='max. 100 kilobytes')
+    enquete = models.ForeignKey(Enquete,blank=True,null=True)
+    def filelink(self):
+        try:
+            print 'Path : http://127.0.0.1:8000{}'.format(self.file.url)
+            return self.file.url
+        except:
+            return 'None'
+    #imagelink.allow_tags = True
+
+class FileHtml(models.Model):
+    filehtm = models.FileField(upload_to='docenquete/',help_text='max. 100 kilobytes')
+    enquete = models.ForeignKey(Enquete,blank=True,null=True)
+
 
 
 
@@ -149,6 +175,12 @@ class Risque(models.Model):
     priorite = models.PositiveIntegerField()
     # def local(self):
     #     for vulnerabilite in
+    def enqueterisque(self):
+        for perception in Perception.objects.all():
+            for risque in perception.risques.all():
+                if(risque == self.risque):
+                    return perception.enquete
+        return None
 
 
 
@@ -159,7 +191,7 @@ class DegreDexposition(models.Model):
         (u'Modérément',u'Modérément'),
         (u'Faiblement',u'Faiblement'),
     )
-    degre = models.CharField(max_length=100,choices=DEGRE)
+    degre = models.CharField(max_length=100,choices=DEGRE,null=True,blank=True)
     risqued = models.ForeignKey(Risque)
     local = models.ForeignKey(HtiAdm3)
 
@@ -169,7 +201,7 @@ class Vulnerabilite(models.Model):
         (u'Modéré',u'Modéré'),
         (u'Faible',u'Faible'),
     )
-    niveau = models.CharField(max_length=50,choices=NIVEAU)
+    niveau = models.CharField(max_length=50,choices=NIVEAU,null=True,blank=True)
     local = models.ForeignKey(HtiAdm3)
     risquev = models.ForeignKey(Risque)
 
