@@ -696,7 +696,7 @@ INNER JOIN public."gestionR_risque" ON public."gestionR_risque".id=public."gesti
 
 
 
-def jsonrisquesdegredexposition(request):
+def jsonrisquesdegreeexposition(request):
     sql = """SELECT * FROM public."hti_adm3" INNER JOIN public."gestionR_degredexposition"
 ON public."hti_adm3".id=public."gestionR_degredexposition".local_id
 INNER JOIN public."gestionR_risque" ON public."gestionR_risque".id=public."gestionR_vulnerabilite".risquev_id;

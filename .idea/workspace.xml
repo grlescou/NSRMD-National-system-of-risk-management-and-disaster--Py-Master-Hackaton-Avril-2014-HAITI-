@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gestionR/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="701" column="0" selection-start="30357" selection-end="30357" vertical-scroll-proportion="-6.56" vertical-offset="11685" max-vertical-offset="13549">
+            <state line="698" column="21" selection-start="30177" selection-end="30177" vertical-scroll-proportion="0.49010655" vertical-offset="11476" max-vertical-offset="13549">
               <folding />
             </state>
           </provider>
@@ -98,10 +98,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gestionR/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1956" selection-end="1956" vertical-scroll-proportion="0.7835821" vertical-offset="36" max-vertical-offset="816">
+            <state line="35" column="0" selection-start="1956" selection-end="1956" vertical-scroll-proportion="-21.0" vertical-offset="36" max-vertical-offset="816">
               <folding />
             </state>
           </provider>
@@ -664,16 +664,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestionR/views.py">
+    <entry file="file://$PROJECT_DIR$/gestionR/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="701" column="0" selection-start="30357" selection-end="30357" vertical-scroll-proportion="-6.56" vertical-offset="11685" max-vertical-offset="13549">
+        <state line="35" column="0" selection-start="1956" selection-end="1956" vertical-scroll-proportion="-21.0" vertical-offset="36" max-vertical-offset="816">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestionR/urls.py">
+    <entry file="file://$PROJECT_DIR$/gestionR/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1956" selection-end="1956" vertical-scroll-proportion="0.7835821" vertical-offset="36" max-vertical-offset="816">
+        <state line="698" column="21" selection-start="30177" selection-end="30177" vertical-scroll-proportion="0.49010655" vertical-offset="11476" max-vertical-offset="13549">
           <folding />
         </state>
       </provider>
