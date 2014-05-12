@@ -254,6 +254,21 @@
 //----------------------------------------------------------
 
 
+   var StyleMapbase = new OpenLayers.StyleMap({'default': stylemapbase});
+
+                 var layerbase = new OpenLayers.Layer.Vector("Layer departement", {
+                    strategies: [new OpenLayers.Strategy.Fixed()],
+                    protocol: new OpenLayers.Protocol.HTTP({
+
+                        url: "/test/jsonmapbase/",
+                        format: new OpenLayers.Format.GeoJSON(),
+                        featureType: "smallworld",
+                        featureNS: "test/earth"
+
+                    }),
+                    styleMap: StyleMapbase
+                });
+
 
 
 
