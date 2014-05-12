@@ -684,8 +684,7 @@ def jsonrisques(request):
 ON public."hti_adm3".id=public."gestionR_degredexposition".local_id
 INNER JOIN  public."gestionR_vulnerabilite" ON public."hti_adm3".id=public."gestionR_vulnerabilite".local_id
 INNER JOIN public."gestionR_risque" ON public."gestionR_risque".id=public."gestionR_vulnerabilite".risquev_id;
-
-            """
+"""
 
 
     # AND public."gestionR_risque".id=public."gestionR_degredexposition".risqued_id;
@@ -694,6 +693,42 @@ INNER JOIN public."gestionR_risque" ON public."gestionR_risque".id=public."gesti
     geoj = GeoJSON.GeoJSON()
     s = geoj.encode(djf.decode(query))
     return HttpResponse(s)
+
+
+
+def jsonrisquesdegredexposition(request):
+    sql = """SELECT * FROM public."hti_adm3" INNER JOIN public."gestionR_degredexposition"
+ON public."hti_adm3".id=public."gestionR_degredexposition".local_id
+INNER JOIN public."gestionR_risque" ON public."gestionR_risque".id=public."gestionR_vulnerabilite".risquev_id;
+"""
+
+
+    # AND public."gestionR_risque".id=public."gestionR_degredexposition".risqued_id;
+    query = HtiAdm3.objects.raw(sql)
+    djf = Django.Django(geodjango="geom", properties=['name_1','name_2','name_3', 'degre', 'niveau','risque'])  #['commune','niveau','departemen','section']
+    geoj = GeoJSON.GeoJSON()
+    s = geoj.encode(djf.decode(query))
+    return HttpResponse(s)
+
+
+
+def jsonrisquesvulnerabilite(request):
+    sql = """SELECT * FROM public."hti_adm3" INNER JOIN  public."gestionR_vulnerabilite" ON public."hti_adm3".id=public."gestionR_vulnerabilite".local_id
+INNER JOIN public."gestionR_risque" ON public."gestionR_risque".id=public."gestionR_vulnerabilite".risquev_id;
+"""
+
+
+    # AND public."gestionR_risque".id=public."gestionR_degredexposition".risqued_id;
+    query = HtiAdm3.objects.raw(sql)
+    djf = Django.Django(geodjango="geom", properties=['name_1','name_2','name_3', 'degre', 'niveau','risque'])  #['commune','niveau','departemen','section']
+    geoj = GeoJSON.GeoJSON()
+    s = geoj.encode(djf.decode(query))
+    return HttpResponse(s)
+
+
+
+
+
 
 def maprisque(request):
     return render_to_response('risque/map.html', locals(), context_instance=RequestContext(request))
