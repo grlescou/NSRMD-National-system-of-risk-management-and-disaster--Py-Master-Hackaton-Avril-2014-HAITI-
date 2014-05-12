@@ -5,7 +5,7 @@ RISQUE = (
         ('Cyclones','Cyclones'),
         ('Foudre','Foudre'),
         ('Tsunami','Tsunami'),
-        (u'Secheresse',u'Sécheresse'),
+        (u'Secheresse',u'Secheresse'),
         ('Eboulement','Eboulement'),
         ('Innodation','Innodation'),
         ('Glissement de terrain','Glissement de terrain'),
