@@ -3,7 +3,7 @@
  
  Organizer : Code for Resillience
  
- **3rd position finalise**
+ **3rd Place**
 
 http://haiti-dpc.herokuapp.com/
 
